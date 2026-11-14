@@ -109,15 +109,26 @@ export default function Header({ onOpenBooking }) {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="relative h-10 w-44 sm:h-12 sm:w-52">
+          <Link href="/" className="flex items-center space-x-3 group">
+            <div className="relative h-11 w-11 rounded-full overflow-hidden shrink-0 group-hover:scale-105 transition-transform">
               <Image
-                src="/images/Hughes-International-scaled.png"
-                alt="Hughes Chauffeur Service"
+                src="/logo.png"
+                alt="SYD Airport Transfer Logo"
                 fill
                 priority
-                className="object-contain object-left"
+                className="object-contain"
               />
+            </div>
+            <div className="flex flex-col justify-center">
+              <span className="text-base sm:text-lg font-serif tracking-[0.2em] text-[#bea166] font-bold uppercase leading-none">
+                SYD Airport
+              </span>
+              <span className="text-base sm:text-lg font-serif tracking-[0.2em] text-white font-bold uppercase leading-none mt-1">
+                Transfer
+              </span>
+              <span className="text-[8px] sm:text-[9px] tracking-[0.32em] text-zinc-300 uppercase font-light mt-1.5 leading-none">
+                Chauffeur Services
+              </span>
             </div>
           </Link>
 
