@@ -1,20 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
-import HeroSection from "./components/home/HeroSection";
-import FeaturesSection from "./components/home/FeaturesSection";
-import ServicesSection from "./components/home/ServicesSection";
-import LocationsSection from "./components/home/LocationsSection";
-import ChauffeurExperienceSection from "./components/home/ChauffeurExperienceSection";
-import BrandsSection from "./components/home/BrandsSection";
-import CtaBannerSection from "./components/home/CtaBannerSection";
-import AppDownloadSection from "./components/home/AppDownloadSection";
-import FaqSection from "./components/home/FaqSection";
-import ContactSection from "./components/home/ContactSection";
-import BookingModal from "./components/booking/BookingModal";
-import QuickBookingWidget from "./components/booking/QuickBookingWidget";
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
+import HeroSection from "../components/home/HeroSection";
+import FeaturesSection from "../components/home/FeaturesSection";
+import ServicesSection from "../components/home/ServicesSection";
+import LocationsSection from "../components/home/LocationsSection";
+import ChauffeurExperienceSection from "../components/home/ChauffeurExperienceSection";
+import BrandsSection from "../components/home/BrandsSection";
+import CtaBannerSection from "../components/home/CtaBannerSection";
+import AppDownloadSection from "../components/home/AppDownloadSection";
+import FaqSection from "../components/home/FaqSection";
+import ContactSection from "../components/home/ContactSection";
+import BookingModal from "../components/booking/BookingModal";
+import QuickBookingWidget from "../components/booking/QuickBookingWidget";
 
 export default function Home() {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);

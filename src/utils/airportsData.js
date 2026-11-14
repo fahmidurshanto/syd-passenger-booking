@@ -1,0 +1,77 @@
+export const airports = [
+  {
+    city: "Sydney",
+    code: "SYD",
+    name: "Sydney Kingsford Smith Airport",
+    description: "Direct luxury transfers between Terminals 1 (International), 2 & 3 (Domestic) and Sydney CBD, North Sydney, Parramatta, and Eastern Suburbs.",
+    routes: "Airport • CBD • Circular Quay • Barangaroo • North Sydney",
+    slug: "sydney-airport-transfers",
+  },
+  {
+    city: "Melbourne",
+    code: "MEL / AVV",
+    name: "Melbourne Tullamarine & Avalon Airports",
+    description: "Premier chauffeur service covering Tullamarine (MEL) & Avalon (AVV) to Melbourne CBD, Southbank, Docklands, and Yarra Valley.",
+    routes: "Airport • Melbourne CBD • Southbank • Docklands • St Kilda",
+    slug: "melbourne-airport-transfers",
+  },
+  {
+    city: "Brisbane",
+    code: "BNE",
+    name: "Brisbane International & Domestic Airport",
+    description: "Dedicated chauffeur solutions connecting Brisbane Airport to Brisbane CBD, Fortitude Valley, South Bank, and Sunshine Coast.",
+    routes: "Airport • Brisbane CBD • Fortitude Valley • South Bank",
+    slug: "brisbane-airport-transfers",
+  },
+  {
+    city: "Perth",
+    code: "PER",
+    name: "Perth Airport All Terminals (T1 - T4)",
+    description: "Executive airport transfers across Perth Airport terminals connecting corporate guests directly to Perth CBD, Fremantle, and Crown Towers.",
+    routes: "Airport • Perth CBD • Crown Towers • Fremantle • Optus Stadium",
+    slug: "perth-airport-transfers",
+  },
+  {
+    city: "Adelaide",
+    code: "ADL",
+    name: "Adelaide Airport",
+    description: "Door-to-door luxury transfers linking Adelaide Airport to North Adelaide, Glenelg, Barossa Valley, and McLaren Vale wine regions.",
+    routes: "Airport • Adelaide CBD • Glenelg • Barossa Valley",
+    slug: "adelaide-airport-transfers",
+  },
+  {
+    city: "Gold Coast",
+    code: "OOL",
+    name: "Gold Coast Coolangatta Airport",
+    description: "Stress-free holiday and executive transfers between Coolangatta Airport, Surfers Paradise, Broadbeach, Sanctuary Cove, and Byron Bay.",
+    routes: "Airport • Surfers Paradise • Broadbeach • Sanctuary Cove • Byron Bay",
+    slug: "gold-coast-airport-transfers",
+  },
+  {
+    city: "Cairns & Port Douglas",
+    code: "CNS",
+    name: "Cairns International & Domestic Airport",
+    description: "Scenic chauffeur transfers linking Cairns Airport to Palm Cove, Port Douglas luxury resorts, and Great Barrier Reef departures.",
+    routes: "Airport • Cairns CBD • Palm Cove • Port Douglas • Daintree",
+    slug: "cairns-port-douglas",
+  },
+  {
+    city: "Canberra",
+    code: "CBR",
+    name: "Canberra Airport",
+    description: "Diplomatic and corporate airport chauffeur transfers connecting Canberra Airport to Parliament House, embassies, and city center.",
+    routes: "Airport • Parliament House • Barton • Civic • Embassies",
+    slug: "canberra-airport-transfers",
+  },
+  {
+    city: "Sunshine Coast",
+    code: "MCY",
+    name: "Sunshine Coast Airport",
+    description: "Seamless travel connecting Sunshine Coast Airport to Noosa Heads, Hastings Street, Maroochydore, Mooloolaba, and Caloundra.",
+    routes: "Airport • Noosa Heads • Hastings St • Maroochydore",
+    slug: "sunshine-coast-transfers",
+  },
+];
+
+export const airportLocations = airports;
+

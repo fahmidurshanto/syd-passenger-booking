@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { navItems } from "@/utils/navData";
 
 export default function Header({ onOpenBooking }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,145 +18,6 @@ export default function Header({ onOpenBooking }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
-    {
-      title: "Airport Transfers",
-      href: "#services",
-      columns: [
-        {
-          title: "Major Cities",
-          links: [
-            { name: "Sydney Airport Transfers", href: "#services" },
-            { name: "Melbourne Airport Transfers", href: "#services" },
-            { name: "Brisbane Airport Transfers", href: "#services" },
-            { name: "Perth Airport Transfers", href: "#services" },
-            { name: "Adelaide Airport Transfers", href: "#services" },
-          ],
-        },
-        {
-          title: "Regional & Holiday",
-          links: [
-            { name: "Gold Coast Airport Transfers", href: "#services" },
-            { name: "Cairns & Port Douglas", href: "#services" },
-            { name: "Sunshine Coast Transfers", href: "#services" },
-            { name: "Canberra Airport Transfers", href: "#services" },
-            { name: "Darwin & Hobart Transfers", href: "#services" },
-          ],
-        },
-        {
-          title: "International & Info",
-          links: [
-            { name: "Changi Airport (Singapore)", href: "#services" },
-            { name: "Auckland Airport Transfers", href: "#services" },
-            { name: "Christchurch & Queenstown", href: "#services" },
-            { name: "Airport Meeting Points", href: "#faq" },
-          ],
-        },
-      ],
-    },
-    {
-      title: "Locations",
-      href: "#locations",
-      columns: [
-        {
-          title: "Australia East",
-          links: [
-            { name: "Sydney", href: "#locations" },
-            { name: "Melbourne", href: "#locations" },
-            { name: "Brisbane", href: "#locations" },
-            { name: "Gold Coast", href: "#locations" },
-            { name: "Canberra", href: "#locations" },
-          ],
-        },
-        {
-          title: "Australia Regional & West",
-          links: [
-            { name: "Perth", href: "#locations" },
-            { name: "Adelaide", href: "#locations" },
-            { name: "Cairns & Port Douglas", href: "#locations" },
-            { name: "Byron Bay", href: "#locations" },
-            { name: "Hobart & Launceston", href: "#locations" },
-          ],
-        },
-        {
-          title: "International",
-          links: [
-            { name: "Singapore", href: "#locations" },
-            { name: "New Zealand", href: "#locations" },
-            { name: "Global Network", href: "#locations" },
-          ],
-        },
-      ],
-    },
-    {
-      title: "Services",
-      href: "#services",
-      columns: [
-        {
-          title: "Corporate & Business",
-          links: [
-            { name: "Corporate Transfers", href: "#services" },
-            { name: "Conferences & Special Events", href: "#services" },
-            { name: "Airline & Cruise Crewing", href: "#services" },
-            { name: "All Day Chauffeur Hire", href: "#services" },
-          ],
-        },
-        {
-          title: "Leisure & VIP",
-          links: [
-            { name: "Cruise Ship Transfers", href: "#services" },
-            { name: "Luxury Private Tours", href: "#services" },
-            { name: "International Student Transfers", href: "#services" },
-            { name: "Hughes Mobile App", href: "#app" },
-          ],
-        },
-      ],
-    },
-    {
-      title: "The Fleet",
-      href: "#fleet",
-      columns: [
-        {
-          title: "Luxury Vehicles",
-          links: [
-            { name: "Executive Sedans (Mercedes E-Class, BMW 5)", href: "#fleet" },
-            { name: "Premium Sedans (Mercedes S-Class, BMW 7)", href: "#fleet" },
-            { name: "Premium Luxury SUVs (Audi Q7, BMW X5)", href: "#fleet" },
-          ],
-        },
-        {
-          title: "Group Transport",
-          links: [
-            { name: "People Movers (Mercedes V-Class)", href: "#fleet" },
-            { name: "Luxury Minibuses (12-24 seats)", href: "#fleet" },
-            { name: "Luxury Coaches (Up to 54 seats)", href: "#fleet" },
-          ],
-        },
-      ],
-    },
-    {
-      title: "About Us",
-      href: "#experience",
-      columns: [
-        {
-          title: "Hughes Heritage",
-          links: [
-            { name: "Our History Since 1904", href: "#experience" },
-            { name: "The Hughes Chauffeur Experience", href: "#experience" },
-            { name: "Driver Standards & Accreditation", href: "#experience" },
-          ],
-        },
-        {
-          title: "Support & Information",
-          links: [
-            { name: "Frequently Asked Questions", href: "#faq" },
-            { name: "Careers & Join The Fleet", href: "#contact" },
-            { name: "Contact Our 24/7 Team", href: "#contact" },
-          ],
-        },
-      ],
-    },
-  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
@@ -240,11 +102,10 @@ export default function Header({ onOpenBooking }) {
 
       {/* Main Nav */}
       <nav
-        className={`transition-all duration-300 ${
-          isScrolled
+        className={`transition-all duration-300 ${isScrolled
             ? "bg-[#152442]/95 backdrop-blur-md shadow-lg py-3"
             : "bg-[#152442]/90 backdrop-blur-sm py-4"
-        }`}
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">
           {/* Logo */}
