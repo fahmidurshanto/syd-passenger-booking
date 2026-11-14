@@ -1,5 +1,5 @@
 export const meetingPoints = {
-  syd: {
+  SYD: {
     city: "Sydney Airport (SYD)",
     terminal1: "International Terminal 1: Inside the arrivals hall, directly outside the exit from baggage claim customs near the designated Chauffeured Limousine Meeting Point.",
     terminal2: "Domestic Terminal 2 (Virgin / Jetstar / Regional): Inside the arrivals hall on the ground level, adjacent to Baggage Carousel 2 and Carousel 3.",

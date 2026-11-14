@@ -58,20 +58,20 @@ export default function Footer({ onOpenBooking }) {
               </div>
             </div>
             <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-3xl">
-              Hughes is Australia’s only fully national chauffeur service, providing premium airport
+              SYD is Australia’s only fully national chauffeur service, providing premium airport
               transfers, private drivers, and chauffeurs in major cities, including Sydney, Melbourne,
-              Brisbane, Perth, Adelaide, and more. With a network of first-class drivers, Hughes ensures
+              Brisbane, Perth, Adelaide, and more. With a network of first-class drivers, SYD ensures
               unparalleled service nationwide.
             </p>
           </div>
 
           <div className="lg:col-span-4 flex flex-col lg:items-end space-y-3">
             <span className="text-xs uppercase font-bold tracking-widest text-[#bea166]">
-              DOWNLOAD THE HUGHES APP
+              DOWNLOAD THE SYD APP
             </span>
             <div className="flex items-center space-x-3">
               <a
-                href="https://apps.apple.com/pl/app/hughes-chauffeur-service/id1533756887#?platform=iphone"
+                href="https://apps.apple.com/pl/app/SYD-chauffeur-service/id1533756887#?platform=iphone"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:opacity-80 transition"
@@ -85,7 +85,7 @@ export default function Footer({ onOpenBooking }) {
                 />
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=au.com.hugheslimousines.publicapp&hl=en_AU"
+                href="https://play.google.com/store/apps/details?id=au.com.SYDlimousines.publicapp&hl=en_AU"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:opacity-80 transition"
@@ -157,7 +157,7 @@ export default function Footer({ onOpenBooking }) {
               </p>
               <div className="relative h-20 w-full max-w-[280px]">
                 <Image
-                  src="/images/Hughes-Website-footer-badges_Updated-30Apr-scaled.png"
+                  src="/images/syd-website-footer-badges_Updated-30Apr-scaled.png"
                   alt="Quality Tourism Accredited Business Badges"
                   fill
                   className="object-contain object-left"
@@ -188,7 +188,7 @@ export default function Footer({ onOpenBooking }) {
               </h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://www.facebook.com/hugheschauffeur/"
+                  href="https://www.facebook.com/SYDchauffeur/"
                   target="_blank"
                   rel="noreferrer"
                   className="w-8 h-8 rounded-full bg-[#22365e] hover:bg-[#bea166] flex items-center justify-center text-white transition-colors"
@@ -199,7 +199,7 @@ export default function Footer({ onOpenBooking }) {
                   </svg>
                 </a>
                 <a
-                  href="https://www.instagram.com/hugheschauffeur/"
+                  href="https://www.instagram.com/SYDchauffeur/"
                   target="_blank"
                   rel="noreferrer"
                   className="w-8 h-8 rounded-full bg-[#22365e] hover:bg-[#bea166] flex items-center justify-center text-white transition-colors"
@@ -210,7 +210,7 @@ export default function Footer({ onOpenBooking }) {
                   </svg>
                 </a>
                 <a
-                  href="https://au.linkedin.com/company/hughesaustralia"
+                  href="https://au.linkedin.com/company/SYDaustralia"
                   target="_blank"
                   rel="noreferrer"
                   className="w-8 h-8 rounded-full bg-[#22365e] hover:bg-[#bea166] flex items-center justify-center text-white transition-colors"
@@ -228,7 +228,7 @@ export default function Footer({ onOpenBooking }) {
         {/* Bottom Legal & Copyright Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
           <div>
-            © 2026 HUGHES - ALL RIGHTS RESERVED
+            © 2026 SYD - ALL RIGHTS RESERVED
           </div>
           <div className="flex items-center space-x-4">
             <Link href="#contact" className="hover:text-[#bea166] transition">Contact</Link>

@@ -11,7 +11,7 @@ export default function AppDownloadSection() {
               Mobile Booking & Fleet Tracking
             </span>
             <h2 className="text-3xl sm:text-5xl font-bold text-[#152442] leading-tight">
-              Download the Hughes App
+              Download the SYD App
             </h2>
             <p className="text-lg text-[#2a4783] font-medium">
               Premium transfers at your fingertips
@@ -44,28 +44,28 @@ export default function AppDownloadSection() {
             {/* Badges */}
             <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4">
               <a
-                href="https://apps.apple.com/pl/app/hughes-chauffeur-service/id1533756887#?platform=iphone"
+                href="https://apps.apple.com/pl/app/SYD-chauffeur-service/id1533756887#?platform=iphone"
                 target="_blank"
                 rel="noreferrer"
                 className="transform hover:scale-105 transition-transform"
               >
                 <Image
                   src="/images/App-Store-1.png"
-                  alt="Download Hughes on App Store"
+                  alt="Download SYD on App Store"
                   width={160}
                   height={52}
                   className="h-12 w-auto object-contain"
                 />
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=au.com.hugheslimousines.publicapp&hl=en_AU"
+                href="https://play.google.com/store/apps/details?id=au.com.SYDlimousines.publicapp&hl=en_AU"
                 target="_blank"
                 rel="noreferrer"
                 className="transform hover:scale-105 transition-transform"
               >
                 <Image
                   src="/images/Google-Play-1.png"
-                  alt="Download Hughes on Google Play"
+                  alt="Download SYD on Google Play"
                   width={160}
                   height={52}
                   className="h-12 w-auto object-contain"
@@ -79,7 +79,7 @@ export default function AppDownloadSection() {
             <div className="relative w-full max-w-md aspect-[3/4] drop-shadow-2xl">
               <Image
                 src="/images/mobile-app-pop-up-image.png"
-                alt="Hughes mobile app interface for premium chauffeur booking"
+                alt="SYD mobile app interface for premium chauffeur booking"
                 fill
                 className="object-contain"
               />

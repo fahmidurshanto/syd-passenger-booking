@@ -130,7 +130,7 @@ export default function LocationsSection({ onSelectCity }) {
       cities: [
         {
           name: "Singapore (Changi)",
-          desc: "Hughes Singapore provides premier Changi Airport (SIN) arrival meet-and-greet, Marina Bay Sands, Orchard Road, Sentosa Island, and CBD corporate travel.",
+          desc: "SYD Singapore provides premier Changi Airport (SIN) arrival meet-and-greet, Marina Bay Sands, Orchard Road, Sentosa Island, and CBD corporate travel.",
           routes: "Changi Airport Terminals 1-4 • Marina Bay • Sentosa • Orchard Rd",
         },
         {
@@ -168,11 +168,10 @@ export default function LocationsSection({ onSelectCity }) {
             <button
               key={region.id}
               onClick={() => setActiveTab(region.id)}
-              className={`px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all ${
-                activeTab === region.id
-                  ? "bg-[#2a4783] text-white shadow-md"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              }`}
+              className={`px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all ${activeTab === region.id
+                ? "bg-[#2a4783] text-white shadow-md"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                }`}
             >
               {region.name}
             </button>

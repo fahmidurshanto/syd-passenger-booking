@@ -28,8 +28,8 @@ export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }
       {/* Background Image with Dark Vignette Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/Hughes_banner.png"
-          alt="Hughes Australia Chauffeur Fleet"
+          src="/images/syd_banner.png"
+          alt="SYD Australia Chauffeur Fleet"
           fill
           priority
           className="object-cover object-center"
@@ -45,7 +45,7 @@ export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }
             Australia&apos;s Chauffeur Service
           </h1>
           <p className="text-lg sm:text-xl text-gray-200 font-light leading-relaxed mb-8 max-w-2xl">
-            Experience the Hughes difference with premium transfers, tours and event transport.
+            Experience the SYD difference with premium transfers, tours and event transport.
           </p>
 
           {/* Action Buttons */}
@@ -121,28 +121,28 @@ export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }
           <div className="col-span-2 lg:col-span-1 flex flex-col sm:items-end justify-center space-y-2">
             <div className="flex items-center space-x-3">
               <a
-                href="https://apps.apple.com/pl/app/hughes-chauffeur-service/id1533756887#?platform=iphone"
+                href="https://apps.apple.com/pl/app/SYD-chauffeur-service/id1533756887#?platform=iphone"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block hover:opacity-80 transition"
               >
                 <Image
                   src="/images/w_app-store.svg"
-                  alt="Download Hughes on App Store"
+                  alt="Download SYD on App Store"
                   width={110}
                   height={34}
                   className="h-8 w-auto object-contain"
                 />
               </a>
               <a
-                href="https://play.google.com/store/apps/details?id=au.com.hugheslimousines.publicapp&hl=en_AU"
+                href="https://play.google.com/store/apps/details?id=au.com.SYDlimousines.publicapp&hl=en_AU"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block hover:opacity-80 transition"
               >
                 <Image
                   src="/images/w_google-play.svg"
-                  alt="Download Hughes on Google Play"
+                  alt="Download SYD on Google Play"
                   width={110}
                   height={34}
                   className="h-8 w-auto object-contain"
@@ -150,7 +150,7 @@ export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }
               </a>
             </div>
             <span className="text-xs text-gray-300 text-right">
-              Download the Hughes app
+              Download the SYD app
             </span>
           </div>
         </div>

@@ -41,12 +41,12 @@ export default function FeaturesSection() {
             Chauffeurs At Your Service
           </h2>
           <p className="text-sm sm:text-base text-[#666666] leading-relaxed">
-            When you choose Hughes, you’re choosing luxury, style, comfort and,
+            When you choose SYD, you’re choosing luxury, style, comfort and,
             most importantly, experience. We’ve been moving Australia for almost
             120 years, and in that time, we’ve learnt how to make it memorable.
             From your friendly driver to your well-appointed vehicle and small
             touches like umbrellas, coffees and local knowledge, you’ll know
-            you’re in good hands with Hughes.
+            you’re in good hands with SYD.
           </p>
         </div>
 

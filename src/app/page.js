@@ -101,7 +101,7 @@ export default function Home() {
         {/* Make Your Next Journey Stress-Free CTA */}
         <CtaBannerSection onOpenBooking={handleOpenBooking} />
 
-        {/* Hughes Mobile App Download */}
+        {/* SYD Mobile App Download */}
         <AppDownloadSection />
 
         {/* 10 Comprehensive FAQs */}

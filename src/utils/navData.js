@@ -8,7 +8,7 @@ export const navItems = [
                 links: [
                     {
                         name: "Sydney Airport Transfers",
-                        href: "/airport-transfers/sydney-airport-transfers",
+                        href: "/airport-transfers/Sydney-airport-transfers",
                         description: "Reliable airport transfers to and from Sydney Airport (SYD). Professional chauffeurs, fixed prices, and 24/7 service.",
                         city: "Sydney",
                         airportName: "Sydney Kingsford Smith Airport",
@@ -17,7 +17,7 @@ export const navItems = [
                         travelTimeToCbd: "20 – 30 mins",
                         badge: "New South Wales • SYD",
                         overview: [
-                            "Hughes provides premier chauffeur-driven airport transfers to and from Sydney Kingsford Smith Airport (SYD), delivering seamless travel for corporate executives, VIPs, and holidaymakers.",
+                            "SYD provides premier chauffeur-driven airport transfers to and from Sydney Kingsford Smith Airport (SYD), delivering seamless travel for corporate executives, VIPs, and holidaymakers.",
                             "Sydney Airport is located approximately 12 kilometres south of the Sydney CBD, with an average transit time of 20 to 30 minutes depending on traffic. Your accredited chauffeur continuously monitors your flight, welcomes you inside the arrivals hall with a digital name board, and assists with all luggage.",
                             "From downtown corporate headquarters in Barangaroo and Martin Place to the North Shore, Eastern Suburbs, and the Blue Mountains, travel in pristine comfort without taxi queues or surge pricing."
                         ],
@@ -37,7 +37,7 @@ export const navItems = [
                         faqs: [
                             { q: "Where will my chauffeur meet me at Sydney Airport (SYD)?", a: "For international arrivals (T1), your chauffeur meets you inside the arrivals hall near the Limousine Meeting Point. For domestic arrivals (T2 & T3), your driver meets you near the baggage carousel area." },
                             { q: "How long does the journey take from Sydney Airport to the CBD?", a: "Sydney Airport is 12 km from the CBD. Transit usually takes 20 to 30 minutes via the Eastern Distributor, though morning and evening peak hours can take 35 to 45 minutes." },
-                            { q: "What happens if my flight into Sydney is delayed?", a: "Hughes dispatch tracks all commercial and private flights in real time. We automatically adjust your pickup time with zero waiting surcharges for flight delays." },
+                            { q: "What happens if my flight into Sydney is delayed?", a: "SYD dispatch tracks all commercial and private flights in real time. We automatically adjust your pickup time with zero waiting surcharges for flight delays." },
                             { q: "Are child seats available for Sydney Airport transfers?", a: "Yes, Australian-standard baby capsules, forward-facing child seats, and booster seats can be requested during booking." },
                             { q: "Are tolls and airport parking fees included?", a: "Yes, all road tolls (including Eastern Distributor and Cross City Tunnel), airport access charges, and GST are included in your fixed quote." },
                         ],
@@ -53,9 +53,9 @@ export const navItems = [
                         travelTimeToCbd: "25 – 35 mins",
                         badge: "Victoria • MEL",
                         overview: [
-                            "Hughes is Melbourne's premier luxury chauffeur service, providing punctual, door-to-door transfers connecting Melbourne Tullamarine Airport (MEL) and Avalon Airport (AVV) with the CBD and regional Victoria.",
+                            "SYD is Melbourne's premier luxury chauffeur service, providing punctual, door-to-door transfers connecting Melbourne Tullamarine Airport (MEL) and Avalon Airport (AVV) with the CBD and regional Victoria.",
                             "Tullamarine Airport sits 23 kilometres north-west of central Melbourne, typically requiring 25 to 35 minutes via the Tullamarine Freeway and CityLink. Your uniformed chauffeur greets you inside the terminal with a name board and handles your baggage.",
-                            "Whether you are travelling for the Australian Open, the Grand Prix, corporate conferences in Southbank, or a winery tour to the Yarra Valley, Hughes provides total comfort and reliability."
+                            "Whether you are travelling for the Australian Open, the Grand Prix, corporate conferences in Southbank, or a winery tour to the Yarra Valley, SYD provides total comfort and reliability."
                         ],
                         popularRoutes: [
                             { name: "Melbourne CBD & Docklands", distance: "23 km", time: "25 - 35 mins", desc: "Central business district, Collins Street, and Crown Towers" },
@@ -73,8 +73,8 @@ export const navItems = [
                         faqs: [
                             { q: "Where does my chauffeur meet me at Melbourne Tullamarine Airport?", a: "Your chauffeur will greet you inside the terminal arrivals area holding a digital name board near the baggage carousels or international exit." },
                             { q: "How long is the drive from Melbourne Airport to the city centre?", a: "Under regular traffic conditions, travel time between Melbourne Airport and the CBD is 25 to 35 minutes via CityLink." },
-                            { q: "Do you service Avalon Airport as well?", a: "Yes, Hughes provides 24/7 transfers to and from Avalon Airport (AVV) for both domestic passengers and private charters." },
-                            { q: "Can I book a return transfer from my hotel back to Melbourne Airport?", a: "Yes, return transfers can be easily scheduled online or via the Hughes app with guaranteed on-time pickup." },
+                            { q: "Do you service Avalon Airport as well?", a: "Yes, SYD provides 24/7 transfers to and from Avalon Airport (AVV) for both domestic passengers and private charters." },
+                            { q: "Can I book a return transfer from my hotel back to Melbourne Airport?", a: "Yes, return transfers can be easily scheduled online or via the SYD app with guaranteed on-time pickup." },
                         ],
                     },
                     {
@@ -89,7 +89,7 @@ export const navItems = [
                         badge: "Queensland • BNE",
                         overview: [
                             "Experience premier chauffeured airport transfers connecting Brisbane Airport (BNE) with Brisbane CBD, Fortitude Valley, South Bank, and Queensland's coastal regions.",
-                            "Situated 16 kilometres north-east of downtown Brisbane, transit typically takes 18 to 25 minutes via AirportlinkM7. Hughes chauffeurs deliver discrete, VIP service with flight monitoring and luggage assistance.",
+                            "Situated 16 kilometres north-east of downtown Brisbane, transit typically takes 18 to 25 minutes via AirportlinkM7. SYD chauffeurs deliver discrete, VIP service with flight monitoring and luggage assistance.",
                             "We also provide direct inter-city transfers from Brisbane Airport straight to Surfers Paradise on the Gold Coast or Noosa on the Sunshine Coast."
                         ],
                         popularRoutes: [
@@ -106,7 +106,7 @@ export const navItems = [
                         },
                         faqs: [
                             { q: "Where do I meet my driver at Brisbane Airport?", a: "In the Domestic Terminal, meet inside the central concourse. In the International Terminal, meet near The Coffee Club on the ground floor." },
-                            { q: "Can I transfer directly from Brisbane Airport to the Gold Coast?", a: "Yes, Hughes provides direct door-to-door transfers from Brisbane Airport to any Gold Coast address in luxury sedans or people movers." },
+                            { q: "Can I transfer directly from Brisbane Airport to the Gold Coast?", a: "Yes, SYD provides direct door-to-door transfers from Brisbane Airport to any Gold Coast address in luxury sedans or people movers." },
                         ],
                     },
                     {
@@ -120,7 +120,7 @@ export const navItems = [
                         travelTimeToCbd: "18 – 25 mins",
                         badge: "Western Australia • PER",
                         overview: [
-                            "Hughes provides reliable executive airport transfers across all Perth Airport terminals (T1, T2, T3, T4), servicing business leaders, FIFO executives, and visitors across Western Australia.",
+                            "SYD provides reliable executive airport transfers across all Perth Airport terminals (T1, T2, T3, T4), servicing business leaders, FIFO executives, and visitors across Western Australia.",
                             "Perth Airport is located 14 kilometres east of the Perth CBD, with an average transit time of 18 to 25 minutes. Enjoy seamless inside-terminal meet-and-greet and flight delay monitoring.",
                             "Our luxury vehicles regularly service Perth CBD, Crown Towers Burswood, Fremantle, and the Swan Valley wine region."
                         ],
@@ -152,9 +152,9 @@ export const navItems = [
                         travelTimeToCbd: "13 – 15 mins",
                         badge: "South Australia • ADL",
                         overview: [
-                            "Hughes provides professional, reliable, and private chauffeur-driven airport transfers to and from Adelaide Airport (ADL), serving corporate travelers, VIPs, holidaymakers, and group delegations.",
+                            "SYD provides professional, reliable, and private chauffeur-driven airport transfers to and from Adelaide Airport (ADL), serving corporate travelers, VIPs, holidaymakers, and group delegations.",
                             "Located approximately 6.5 kilometres west of the Adelaide city centre, the transit takes around 13 to 15 minutes by road. Your dedicated chauffeur tracks your flight in real time, welcomes you inside the terminal with a personalized digital iPad name board, and assists with all baggage.",
-                            "Whether you are heading into North Terrace corporate offices, attending a match at Adelaide Oval, staying at Glenelg Beach, or heading out to the Barossa Valley or McLaren Vale, Hughes ensures supreme comfort, fixed upfront pricing, and absolute punctuality."
+                            "Whether you are heading into North Terrace corporate offices, attending a match at Adelaide Oval, staying at Glenelg Beach, or heading out to the Barossa Valley or McLaren Vale, SYD ensures supreme comfort, fixed upfront pricing, and absolute punctuality."
                         ],
                         popularRoutes: [
                             { name: "Adelaide CBD (North Terrace / King William St)", distance: "6.5 km", time: "13 - 15 mins", desc: "Adelaide corporate hub, 5-star hotels, Adelaide Convention Centre" },
@@ -172,10 +172,10 @@ export const navItems = [
                         faqs: [
                             { q: "Where will my chauffeur meet me at Adelaide Airport (ADL)?", a: "For domestic flights, your chauffeur will be waiting inside the ground-floor arrivals hall right at the bottom of the escalators holding a digital iPad name board. For international arrivals, your chauffeur greets you immediately outside the arrivals hall exit doors." },
                             { q: "How long is the transfer from Adelaide Airport to the Adelaide CBD?", a: "The Adelaide CBD is approximately 6.5 kilometres from the airport. In normal traffic conditions, travel time is between 13 and 15 minutes. During peak traffic hours, allow 20 to 25 minutes." },
-                            { q: "Do you offer private transfers to regional destinations like the Barossa Valley?", a: "Yes. In addition to metropolitan Adelaide, Hughes specializes in direct transfers to all South Australian wine and tourist regions, including the Barossa Valley (~75 km), McLaren Vale (~42 km), Clare Valley, Adelaide Hills, Victor Harbor, and Port Lincoln." },
-                            { q: "What happens if my flight into Adelaide is delayed?", a: "Hughes utilizes automated real-time flight tracking. Your chauffeur constantly monitors your incoming flight status and adjusts their arrival time accordingly, ensuring they are waiting when you land with no unexpected waiting surcharges for delayed flights." },
+                            { q: "Do you offer private transfers to regional destinations like the Barossa Valley?", a: "Yes. In addition to metropolitan Adelaide, SYD specializes in direct transfers to all South Australian wine and tourist regions, including the Barossa Valley (~75 km), McLaren Vale (~42 km), Clare Valley, Adelaide Hills, Victor Harbor, and Port Lincoln." },
+                            { q: "What happens if my flight into Adelaide is delayed?", a: "SYD utilizes automated real-time flight tracking. Your chauffeur constantly monitors your incoming flight status and adjusts their arrival time accordingly, ensuring they are waiting when you land with no unexpected waiting surcharges for delayed flights." },
                             { q: "Can I request child booster or baby safety seats?", a: "Yes. We supply Australian-standard compliant baby capsules, forward-facing child seats, and booster seats upon request during booking." },
-                            { q: "Are airport parking fees and road tolls included?", a: "Yes. Hughes provides fixed, all-inclusive pricing. All airport parking fees, access surcharges, and GST are included in your quote." },
+                            { q: "Are airport parking fees and road tolls included?", a: "Yes. SYD provides fixed, all-inclusive pricing. All airport parking fees, access surcharges, and GST are included in your quote." },
                         ],
                     },
                 ],
@@ -211,7 +211,7 @@ export const navItems = [
                         },
                         faqs: [
                             { q: "Where will my driver meet me at Gold Coast Airport?", a: "Your chauffeur meets you inside the arrivals hall near the baggage collection carousels." },
-                            { q: "Can I book a transfer from Gold Coast Airport to Byron Bay?", a: "Yes, Hughes provides frequent private transfers connecting Gold Coast Airport directly to Byron Bay luxury retreats." },
+                            { q: "Can I book a transfer from Gold Coast Airport to Byron Bay?", a: "Yes, SYD provides frequent private transfers connecting Gold Coast Airport directly to Byron Bay luxury retreats." },
                         ],
                     },
                     {
@@ -225,7 +225,7 @@ export const navItems = [
                         travelTimeToCbd: "10 mins (Cairns) / 60 mins (Port Douglas)",
                         badge: "Tropical North QLD • CNS",
                         overview: [
-                            "Arrive in Tropical North Queensland in pure luxury with Hughes private chauffeured transfers from Cairns Airport (CNS) to Cairns CBD, Palm Cove, Port Douglas, and the Daintree.",
+                            "Arrive in Tropical North Queensland in pure luxury with SYD private chauffeured transfers from Cairns Airport (CNS) to Cairns CBD, Palm Cove, Port Douglas, and the Daintree.",
                             "Enjoy a scenic coastal drive along the Captain Cook Highway with a knowledgeable local chauffeur, air-conditioned comfort, and personalized luggage assistance."
                         ],
                         popularRoutes: [
@@ -254,7 +254,7 @@ export const navItems = [
                         travelTimeToCbd: "25 – 30 mins",
                         badge: "Queensland • MCY",
                         overview: [
-                            "Travel smoothly between Sunshine Coast Airport (MCY) and Noosa Heads, Mooloolaba, Hastings Street, and coastal retreats with Hughes Chauffeur Service."
+                            "Travel smoothly between Sunshine Coast Airport (MCY) and Noosa Heads, Mooloolaba, Hastings Street, and coastal retreats with SYD Chauffeur Service."
                         ],
                         popularRoutes: [
                             { name: "Noosa Heads & Hastings Street", distance: "32 km", time: "28 - 35 mins", desc: "Noosa luxury resorts, national park, and restaurants" },
@@ -281,7 +281,7 @@ export const navItems = [
                         travelTimeToCbd: "10 – 15 mins",
                         badge: "ACT • CBR",
                         overview: [
-                            "Hughes provides distinguished diplomatic, government, and corporate chauffeur services connecting Canberra Airport (CBR) with Parliament House, embassies, and the city centre."
+                            "SYD provides distinguished diplomatic, government, and corporate chauffeur services connecting Canberra Airport (CBR) with Parliament House, embassies, and the city centre."
                         ],
                         popularRoutes: [
                             { name: "Parliament House & Barton", distance: "9 km", time: "12 - 15 mins", desc: "Parliamentary Triangle, ministerial offices, and embassies" },
@@ -293,7 +293,7 @@ export const navItems = [
                             instructions: "Chauffeur displays a personalized name board and escorts you to the VIP parking rank."
                         },
                         faqs: [
-                            { q: "Do you service diplomatic delegations in Canberra?", a: "Yes, Hughes regularly coordinates high-security diplomatic and ministerial transfers in Canberra." },
+                            { q: "Do you service diplomatic delegations in Canberra?", a: "Yes, SYD regularly coordinates high-security diplomatic and ministerial transfers in Canberra." },
                         ],
                     },
                     {
@@ -307,7 +307,7 @@ export const navItems = [
                         travelTimeToCbd: "15 – 20 mins",
                         badge: "Regional Capitals • DRW & HBA",
                         overview: [
-                            "Hughes provides reliable luxury chauffeur services across Darwin Airport (DRW) in the Northern Territory and Hobart Airport (HBA) in Tasmania."
+                            "SYD provides reliable luxury chauffeur services across Darwin Airport (DRW) in the Northern Territory and Hobart Airport (HBA) in Tasmania."
                         ],
                         popularRoutes: [
                             { name: "Hobart Waterfront & Salamanca", distance: "18 km", time: "18 - 22 mins", desc: "Historic waterfront hotels, MONA ferry terminal, and dining" },
@@ -338,7 +338,7 @@ export const navItems = [
                         travelTimeToCbd: "20 – 25 mins",
                         badge: "International • SIN",
                         overview: [
-                            "Hughes extends its premier chauffeur service to Singapore Changi Airport (SIN), providing luxury airport transfers to Marina Bay, Orchard Road, and regional business districts."
+                            "SYD extends its premier chauffeur service to Singapore Changi Airport (SIN), providing luxury airport transfers to Marina Bay, Orchard Road, and regional business districts."
                         ],
                         popularRoutes: [
                             { name: "Marina Bay & Central Business District", distance: "20 km", time: "20 - 25 mins", desc: "Financial district, Marina Bay Sands, and luxury hotels" },
@@ -365,7 +365,7 @@ export const navItems = [
                         travelTimeToCbd: "25 – 35 mins",
                         badge: "New Zealand • AKL",
                         overview: [
-                            "Hughes provides executive airport transfers connecting Auckland Airport (AKL) with Auckland central business district, Viaduct Harbour, and surrounding North Island destinations."
+                            "SYD provides executive airport transfers connecting Auckland Airport (AKL) with Auckland central business district, Viaduct Harbour, and surrounding North Island destinations."
                         ],
                         popularRoutes: [
                             { name: "Auckland CBD & Viaduct Harbour", distance: "21 km", time: "25 - 35 mins", desc: "Downtown hotels, waterfront precinct, and corporate offices" },
@@ -416,7 +416,7 @@ export const navItems = [
                         travelTimeToCbd: "Direct to Terminal",
                         badge: "Guide & Instructions",
                         overview: [
-                            "Comprehensive national guide explaining where and how Hughes chauffeurs meet passengers across all major Australian and international terminals."
+                            "Comprehensive national guide explaining where and how SYD chauffeurs meet passengers across all major Australian and international terminals."
                         ],
                         popularRoutes: [],
                         meetingPoints: {
@@ -439,7 +439,7 @@ export const navItems = [
             {
                 title: "Australia East",
                 links: [
-                    { name: "Sydney", href: "/locations/sydney", description: "Chauffeured luxury cars across Sydney CBD, Eastern Suburbs, North Sydney, Western Sydney, and regional NSW." },
+                    { name: "Sydney", href: "/locations/Sydney", description: "Chauffeured luxury cars across Sydney CBD, Eastern Suburbs, North Sydney, Western Sydney, and regional NSW." },
                     { name: "Melbourne", href: "/locations/melbourne", description: "Premium chauffeur services across Melbourne CBD, Southbank, Docklands, Yarra Valley, and Mornington Peninsula." },
                     { name: "Brisbane", href: "/locations/brisbane", description: "Professional corporate and leisure chauffeur services across Brisbane CBD, Fortitude Valley, and South Bank." },
                     { name: "Gold Coast", href: "/locations/gold-coast", description: "Luxury chauffeured transport across Surfers Paradise, Broadbeach, Sanctuary Cove, and premier coastal destinations." },
@@ -485,7 +485,7 @@ export const navItems = [
                     { name: "Cruise Ship Transfers", href: "/services/cruise-ship-transfers", description: "Stress-free transfers to and from passenger cruise terminals with generous luggage space and meet-and-greet." },
                     { name: "Luxury Private Tours", href: "/services/luxury-private-tours", description: "Customized private day tours with knowledgeable chauffeurs to iconic landmarks, coastlines, and wine regions." },
                     { name: "International Student Transfers", href: "/services/international-student-transfers", description: "Safe, welcoming airport arrival and departure transfers connecting international students to their universities." },
-                    { name: "Hughes Mobile App", href: "/services/hughes-mobile-app", description: "Effortlessly book rides, track your assigned chauffeur in real time, and manage travel receipts on your smartphone." },
+                    { name: "SYD Mobile App", href: "/services/syd-mobile-app", description: "Effortlessly book rides, track your assigned chauffeur in real time, and manage travel receipts on your smartphone." },
                 ],
             },
         ],
@@ -517,10 +517,10 @@ export const navItems = [
         href: "/about-us",
         columns: [
             {
-                title: "Hughes Heritage",
+                title: "SYD Heritage",
                 links: [
                     { name: "Our History Since 1904", href: "/about-us/our-history", description: "Explore over a century of chauffeured excellence and innovation as Australia's premier transport service provider." },
-                    { name: "The Hughes Chauffeur Experience", href: "/about-us/chauffeur-experience", description: "Discover the hallmarks of our service: impeccable discretion, punctual arrivals, and unmatched client care." },
+                    { name: "The SYD Chauffeur Experience", href: "/about-us/chauffeur-experience", description: "Discover the hallmarks of our service: impeccable discretion, punctual arrivals, and unmatched client care." },
                     { name: "Driver Standards & Accreditation", href: "/about-us/driver-standards-accreditation", description: "Learn about our rigorous background checks, professional certifications, and elite hospitality training standards." },
                 ],
             },

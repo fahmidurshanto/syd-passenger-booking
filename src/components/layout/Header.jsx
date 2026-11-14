@@ -63,7 +63,7 @@ export default function Header({ onOpenBooking }) {
                     Account Applications
                   </a>
                   <a
-                    href="https://client.hughes.com.au/"
+                    href="https://client.SYD.com.au/"
                     target="_blank"
                     rel="noreferrer"
                     className="block px-4 py-1.5 text-xs text-[#d0d7e5] hover:bg-[#2a4783] hover:text-white"
@@ -75,7 +75,7 @@ export default function Header({ onOpenBooking }) {
             </div>
             <span className="text-gray-600">|</span>
             <a
-              href="https://client.hughes.com.au/"
+              href="https://client.SYD.com.au/"
               target="_blank"
               rel="noreferrer"
               className="text-[#d0d7e5] hover:text-[#bea166] transition-colors"
@@ -103,8 +103,8 @@ export default function Header({ onOpenBooking }) {
       {/* Main Nav */}
       <nav
         className={`transition-all duration-300 ${isScrolled
-            ? "bg-[#152442]/95 backdrop-blur-md shadow-lg py-3"
-            : "bg-[#152442]/90 backdrop-blur-sm py-4"
+          ? "bg-[#152442]/95 backdrop-blur-md shadow-lg py-3"
+          : "bg-[#152442]/90 backdrop-blur-sm py-4"
           }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between">

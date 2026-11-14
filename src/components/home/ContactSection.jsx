@@ -30,7 +30,7 @@ export default function ContactSection() {
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
             Our friendly Customer Service Team is on hand 24/7 to answer enquiries and keep you moving.
             You can contact us directly on <a href="tel:1300615165" className="text-[#bea166] font-semibold">1300 615 165</a>,
-            at <a href="mailto:res@hughes.com.au" className="text-[#bea166] font-semibold">res@hughes.com.au</a> or leave your details below, and we’ll be in touch.
+            at <a href="mailto:res@SYD.com.au" className="text-[#bea166] font-semibold">res@SYD.com.au</a> or leave your details below, and we’ll be in touch.
           </p>
         </div>
 
@@ -41,7 +41,7 @@ export default function ContactSection() {
             <div className="w-12 h-12 mx-auto mb-4 relative">
               <Image
                 src="/images/mail.png"
-                alt="Email Hughes Chauffeurs"
+                alt="Email SYD Chauffeurs"
                 fill
                 className="object-contain"
               />
@@ -51,16 +51,16 @@ export default function ContactSection() {
             </h3>
             <div className="space-y-1">
               <a
-                href="mailto:res@hughes.com.au"
+                href="mailto:res@SYD.com.au"
                 className="text-sm font-bold text-[#152442] hover:text-[#bea166] transition-colors block"
               >
-                res@hughes.com.au
+                res@SYD.com.au
               </a>
               <a
-                href="mailto:corporate@hughes.com.au"
+                href="mailto:corporate@SYD.com.au"
                 className="text-xs text-gray-600 hover:text-[#bea166] transition-colors block"
               >
-                corporate@hughes.com.au
+                corporate@SYD.com.au
               </a>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function ContactSection() {
             <div className="w-12 h-12 mx-auto mb-4 relative">
               <Image
                 src="/images/call.png"
-                alt="Call Hughes within Australia"
+                alt="Call SYD within Australia"
                 fill
                 className="object-contain"
               />
@@ -92,7 +92,7 @@ export default function ContactSection() {
             <div className="w-12 h-12 mx-auto mb-4 relative">
               <Image
                 src="/images/phone.png"
-                alt="Hughes Global enquiries"
+                alt="SYD Global enquiries"
                 fill
                 className="object-contain"
               />
@@ -218,7 +218,7 @@ export default function ContactSection() {
               </div>
               <h3 className="text-2xl font-bold text-[#152442]">Thank You!</h3>
               <p className="text-sm text-gray-600 max-w-md mx-auto">
-                Your enquiry has been submitted. Our Hughes customer service team will contact you shortly.
+                Your enquiry has been submitted. Our SYD customer service team will contact you shortly.
               </p>
               <button
                 type="button"

@@ -44,18 +44,18 @@ export default function ClientCityView({ slug }) {
   const overviewParagraphs = matchedItem?.overview && matchedItem.overview.length > 0
     ? matchedItem.overview
     : [
-        `Hughes provides professional, reliable, and private chauffeur-driven airport transfers to and from ${airportName}, serving corporate executives, VIPs, holidaymakers, and group delegations.`,
-        `Skip the stressful taxi queues and rideshare delays. Your accredited chauffeur will monitor your flight in real time, welcome you inside the terminal arrivals hall holding a personalized digital name sign, and assist with your luggage.`,
-        `Enjoy fixed upfront pricing, pristine luxury vehicles equipped with dual-zone climate control, and discrete door-to-door transit to any hotel, corporate office, or regional destination.`,
-      ];
+      `SYD provides professional, reliable, and private chauffeur-driven airport transfers to and from ${airportName}, serving corporate executives, VIPs, holidaymakers, and group delegations.`,
+      `Skip the stressful taxi queues and rideshare delays. Your accredited chauffeur will monitor your flight in real time, welcome you inside the terminal arrivals hall holding a personalized digital name sign, and assist with your luggage.`,
+      `Enjoy fixed upfront pricing, pristine luxury vehicles equipped with dual-zone climate control, and discrete door-to-door transit to any hotel, corporate office, or regional destination.`,
+    ];
 
   const popularRoutes = matchedItem?.popularRoutes && matchedItem.popularRoutes.length > 0
     ? matchedItem.popularRoutes
     : [
-        { name: `${city} Central Business District (CBD)`, distance: "10 - 20 km", time: travelTimeToCbd, desc: "Downtown corporate offices, 5-star hotels, and convention precincts" },
-        { name: `${city} Surrounding Suburbs & Coastal Areas`, distance: "15 - 30 km", time: "20 - 35 mins", desc: "Premier residential suburbs, beachfront dining, and boutique hotels" },
-        { name: "Regional & Tourist Destinations", distance: "45 - 80 km", time: "45 - 75 mins", desc: "Scenic regional day trips, luxury lodges, and wine estates" },
-      ];
+      { name: `${city} Central Business District (CBD)`, distance: "10 - 20 km", time: travelTimeToCbd, desc: "Downtown corporate offices, 5-star hotels, and convention precincts" },
+      { name: `${city} Surrounding Suburbs & Coastal Areas`, distance: "15 - 30 km", time: "20 - 35 mins", desc: "Premier residential suburbs, beachfront dining, and boutique hotels" },
+      { name: "Regional & Tourist Destinations", distance: "45 - 80 km", time: "45 - 75 mins", desc: "Scenic regional day trips, luxury lodges, and wine estates" },
+    ];
 
   const meetingPoints = matchedItem?.meetingPoints || {
     domestic: "Arrivals Hall, Ground floor, directly in front of the baggage collection carousels.",
@@ -66,27 +66,27 @@ export default function ClientCityView({ slug }) {
   const faqs = matchedItem?.faqs && matchedItem.faqs.length > 0
     ? matchedItem.faqs
     : [
-        {
-          q: `Where will my chauffeur meet me at ${airportName}?`,
-          a: `Your chauffeur will await you inside the terminal arrivals area holding a digital name board displaying your name or company, ready to assist with all bags.`,
-        },
-        {
-          q: `What happens if my flight into ${city} is delayed?`,
-          a: `Hughes dispatch monitors all incoming and departing flights in real-time. If your flight is early or delayed, your chauffeur automatically adjusts pickup times with zero penalty charges.`,
-        },
-        {
-          q: `How long is the transfer from ${airportName} to the city centre?`,
-          a: `Under typical traffic conditions, travel time is approximately ${travelTimeToCbd} (${distanceToCbd}).`,
-        },
-        {
-          q: `Are airport tolls and parking fees included in the fare?`,
-          a: `Yes, Hughes provides fixed, transparent all-inclusive quotes. All road tolls, airport terminal access charges, and GST are included.`,
-        },
-        {
-          q: `Can I request child booster or baby safety seats?`,
-          a: `Yes, we provide Australian-standard baby capsules, child seats, and booster seats upon request during reservation.`,
-        },
-      ];
+      {
+        q: `Where will my chauffeur meet me at ${airportName}?`,
+        a: `Your chauffeur will await you inside the terminal arrivals area holding a digital name board displaying your name or company, ready to assist with all bags.`,
+      },
+      {
+        q: `What happens if my flight into ${city} is delayed?`,
+        a: `SYD dispatch monitors all incoming and departing flights in real-time. If your flight is early or delayed, your chauffeur automatically adjusts pickup times with zero penalty charges.`,
+      },
+      {
+        q: `How long is the transfer from ${airportName} to the city centre?`,
+        a: `Under typical traffic conditions, travel time is approximately ${travelTimeToCbd} (${distanceToCbd}).`,
+      },
+      {
+        q: `Are airport tolls and parking fees included in the fare?`,
+        a: `Yes, SYD provides fixed, transparent all-inclusive quotes. All road tolls, airport terminal access charges, and GST are included.`,
+      },
+      {
+        q: `Can I request child booster or baby safety seats?`,
+        a: `Yes, we provide Australian-standard baby capsules, child seats, and booster seats upon request during reservation.`,
+      },
+    ];
 
   const handleOpenBooking = () => {
     setBookingModalOpen(true);
@@ -250,7 +250,7 @@ export default function ClientCityView({ slug }) {
                 <div className="relative h-[420px] sm:h-[480px] w-full rounded-2xl overflow-hidden shadow-2xl">
                   <Image
                     src="/images/HUG2201_Photo116-1-500x500.jpg"
-                    alt={`Hughes Chauffeur Service ${city}`}
+                    alt={`SYD Chauffeur Service ${city}`}
                     fill
                     className="object-cover"
                   />
@@ -260,7 +260,7 @@ export default function ClientCityView({ slug }) {
                       {city} Chauffeur Distinction
                     </p>
                     <p className="text-sm font-light">
-                      &quot;Punctual, discrete, and beautifully maintained vehicles. Hughes is our trusted corporate transfer partner in {city}.&quot;
+                      &quot;Punctual, discrete, and beautifully maintained vehicles. SYD is our trusted corporate transfer partner in {city}.&quot;
                     </p>
                   </div>
                 </div>
@@ -274,7 +274,7 @@ export default function ClientCityView({ slug }) {
               <div className="lg:col-span-6 space-y-6">
                 <div className="space-y-2">
                   <span className="text-xs uppercase font-bold tracking-widest text-[#bea166]">
-                    HUGHES CHAUFFEUR SERVICE
+                    SYD CHAUFFEUR SERVICE
                   </span>
                   <h2 className="text-3xl sm:text-4xl font-extrabold text-[#152442] leading-tight">
                     Professional Chauffeured Transfers to &amp; from {airportName}
@@ -352,7 +352,7 @@ export default function ClientCityView({ slug }) {
                 Popular Destinations from {airportName}
               </h2>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                Hughes provides seamless direct transfers connecting {airportName} with central business precincts, coastal resorts, stadiums, and regional wine valleys.
+                SYD provides seamless direct transfers connecting {airportName} with central business precincts, coastal resorts, stadiums, and regional wine valleys.
               </p>
             </div>
 
@@ -501,11 +501,10 @@ export default function ClientCityView({ slug }) {
                 <button
                   key={tab.id}
                   onClick={() => setSelectedFleet(tab.id)}
-                  className={`text-xs sm:text-sm font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all ${
-                    selectedFleet === tab.id
-                      ? "bg-[#bea166] text-white shadow-lg"
-                      : "bg-[#22365e] text-gray-300 hover:bg-[#2a4783] hover:text-white"
-                  }`}
+                  className={`text-xs sm:text-sm font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all ${selectedFleet === tab.id
+                    ? "bg-[#bea166] text-white shadow-lg"
+                    : "bg-[#22365e] text-gray-300 hover:bg-[#2a4783] hover:text-white"
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -611,7 +610,7 @@ export default function ClientCityView({ slug }) {
                 Your Seamless {city} Airport Transfer
               </h2>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                From initial booking to your final destination, enjoy seamless travel with Hughes.
+                From initial booking to your final destination, enjoy seamless travel with SYD.
               </p>
             </div>
 
@@ -663,9 +662,8 @@ export default function ClientCityView({ slug }) {
                   >
                     <span>{faq.q}</span>
                     <svg
-                      className={`w-5 h-5 text-[#bea166] transform transition-transform duration-200 flex-shrink-0 ${
-                        activeFaq === idx ? "rotate-180" : ""
-                      }`}
+                      className={`w-5 h-5 text-[#bea166] transform transition-transform duration-200 flex-shrink-0 ${activeFaq === idx ? "rotate-180" : ""
+                        }`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -694,7 +692,7 @@ export default function ClientCityView({ slug }) {
                   Explore Other Airport Transfer Locations
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-500">
-                  Hughes provides nationwide chauffeur coverage across all Australian capital cities and holiday destinations.
+                  SYD provides nationwide chauffeur coverage across all Australian capital cities and holiday destinations.
                 </p>
               </div>
               <Link
@@ -716,11 +714,10 @@ export default function ClientCityView({ slug }) {
                   <Link
                     key={idx}
                     href={item.href}
-                    className={`text-xs font-semibold px-4 py-2 rounded-lg border transition ${
-                      isCurrent
-                        ? "bg-[#152442] text-white border-[#152442]"
-                        : "bg-gray-50 text-gray-700 border-gray-200 hover:border-[#bea166] hover:text-[#152442]"
-                    }`}
+                    className={`text-xs font-semibold px-4 py-2 rounded-lg border transition ${isCurrent
+                      ? "bg-[#152442] text-white border-[#152442]"
+                      : "bg-gray-50 text-gray-700 border-gray-200 hover:border-[#bea166] hover:text-[#152442]"
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -735,7 +732,7 @@ export default function ClientCityView({ slug }) {
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/cta-bg.png"
-              alt="Hughes Airport Chauffeur Booking"
+              alt="SYD Airport Chauffeur Booking"
               fill
               className="object-cover object-center opacity-30"
             />

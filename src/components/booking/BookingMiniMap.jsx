@@ -63,7 +63,7 @@ export default function BookingMiniMap({
       const hasPickup = pickupCoords?.lat != null && pickupCoords?.lng != null;
       const hasDropoff = dropoffCoords?.lat != null && dropoffCoords?.lng != null;
 
-      // Custom circular dots matching Hughes map style
+      // Custom circular dots matching SYD map style
       const createDotIcon = (color, isSquare = false) =>
         L.divIcon({
           className: "custom-pin",
@@ -103,7 +103,7 @@ export default function BookingMiniMap({
       }
 
       if (hasPickup && hasDropoff) {
-        // Draw Navy Route Line matching Hughes style
+        // Draw Navy Route Line matching SYD style
         const polyline = L.polyline(latlngs, {
           color: "#0c1938",
           weight: 4,

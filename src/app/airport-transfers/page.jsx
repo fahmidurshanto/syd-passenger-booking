@@ -17,7 +17,7 @@ import { faqs } from "@/utils/faqsData";
 
 export default function AirportTransfersPage() {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
-  const [selectedMeetingTab, setSelectedMeetingTab] = useState("syd");
+  const [selectedMeetingTab, setSelectedMeetingTab] = useState("SYD");
   const [activeFaq, setActiveFaq] = useState(null);
   const [selectedFleet, setSelectedFleet] = useState("executive");
 
@@ -41,7 +41,7 @@ export default function AirportTransfersPage() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/airport.jpg"
-              alt="Hughes Airport Chauffeur Transfers Australia"
+              alt="SYD Airport Chauffeur Transfers Australia"
               fill
               priority
               className="object-cover object-center"
@@ -149,7 +149,7 @@ export default function AirportTransfersPage() {
           </div>
         </section>
 
-        {/* Overview: The Hughes Difference */}
+        {/* Overview: The SYD Difference */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -158,7 +158,7 @@ export default function AirportTransfersPage() {
                 <div className="relative h-[420px] sm:h-[480px] w-full rounded-2xl overflow-hidden shadow-2xl">
                   <Image
                     src="/images/HUG2201_Photo116-1-500x500.jpg"
-                    alt="Hughes Chauffeur Greeting Passenger at Airport"
+                    alt="SYD Chauffeur Greeting Passenger at Airport"
                     fill
                     className="object-cover"
                   />
@@ -168,7 +168,7 @@ export default function AirportTransfersPage() {
                       First-Class Arrival Experience
                     </p>
                     <p className="text-sm font-light">
-                      &quot;Hughes makes arriving in any Australian capital effortless. Driver is always waiting, car is immaculate, and zero waiting in queues.&quot;
+                      &quot;SYD makes arriving in any Australian capital effortless. Driver is always waiting, car is immaculate, and zero waiting in queues.&quot;
                     </p>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function AirportTransfersPage() {
               <div className="lg:col-span-6 space-y-6">
                 <div className="space-y-2">
                   <span className="text-xs uppercase font-bold tracking-widest text-[#bea166]">
-                    THE HUGHES EXPERIENCE
+                    THE SYD EXPERIENCE
                   </span>
                   <h2 className="text-3xl sm:text-4xl font-extrabold text-[#152442] leading-tight">
                     On Time, Every Time. Stress-Free Airport Travel.
@@ -190,11 +190,11 @@ export default function AirportTransfersPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  Travelling to or from the airport shouldn’t be stressful. Whether you are catching an early morning domestic flight, arriving on a long-haul international journey, or organizing multi-city executive transfers, Hughes provides a dependable luxury chauffeur service designed around your schedule.
+                  Travelling to or from the airport shouldn’t be stressful. Whether you are catching an early morning domestic flight, arriving on a long-haul international journey, or organizing multi-city executive transfers, SYD provides a dependable luxury chauffeur service designed around your schedule.
                 </p>
 
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  Unlike on-demand taxis or rideshares where wait times, surge pricing, and driver cancellations are common, Hughes delivers guaranteed reservations, automated flight tracking, and uniformed chauffeurs who meet you directly inside the terminal arrivals area.
+                  Unlike on-demand taxis or rideshares where wait times, surge pricing, and driver cancellations are common, SYD delivers guaranteed reservations, automated flight tracking, and uniformed chauffeurs who meet you directly inside the terminal arrivals area.
                 </p>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -250,7 +250,7 @@ export default function AirportTransfersPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-xs uppercase font-bold tracking-widest text-[#bea166] mb-2 block">
-                WHY TRAVEL WITH HUGHES
+                WHY TRAVEL WITH SYD
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-[#152442] mb-4">
                 Designed for Seamless Airport Journeys
@@ -295,7 +295,7 @@ export default function AirportTransfersPage() {
                   Australia&apos;s Major Airport Hubs
                 </h2>
                 <p className="text-sm sm:text-base text-gray-600 mt-3 leading-relaxed">
-                  Hughes operates dedicated chauffeur networks at all domestic and international terminals across Australia, New Zealand, and Singapore.
+                  SYD operates dedicated chauffeur networks at all domestic and international terminals across Australia, New Zealand, and Singapore.
                 </p>
               </div>
 
@@ -377,7 +377,7 @@ export default function AirportTransfersPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-8">
             <div className="text-center max-w-3xl mx-auto mb-14">
               <span className="text-xs uppercase font-bold tracking-widest text-[#bea166] mb-2 block">
-                THE HUGHES FLEET
+                THE SYD FLEET
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
                 Tailored Vehicles for Every Airport Traveler
@@ -399,11 +399,10 @@ export default function AirportTransfersPage() {
                 <button
                   key={tab.id}
                   onClick={() => setSelectedFleet(tab.id)}
-                  className={`text-xs sm:text-sm font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all ${
-                    selectedFleet === tab.id
-                      ? "bg-[#bea166] text-white shadow-lg"
-                      : "bg-[#22365e] text-gray-300 hover:bg-[#2a4783] hover:text-white"
-                  }`}
+                  className={`text-xs sm:text-sm font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all ${selectedFleet === tab.id
+                    ? "bg-[#bea166] text-white shadow-lg"
+                    : "bg-[#22365e] text-gray-300 hover:bg-[#2a4783] hover:text-white"
+                    }`}
                 >
                   {tab.label}
                 </button>
@@ -511,7 +510,7 @@ export default function AirportTransfersPage() {
                 Your Airport Journey in 4 Simple Steps
               </h2>
               <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                From your initial online reservation to curbside drop-off, Hughes ensures complete peace of mind.
+                From your initial online reservation to curbside drop-off, SYD ensures complete peace of mind.
               </p>
             </div>
 
@@ -554,7 +553,7 @@ export default function AirportTransfersPage() {
             {/* City Tabs */}
             <div className="flex flex-wrap justify-center gap-2 mb-10">
               {[
-                { id: "syd", name: "Sydney (SYD)" },
+                { id: "SYD", name: "Sydney (SYD)" },
                 { id: "mel", name: "Melbourne (MEL)" },
                 { id: "bne", name: "Brisbane (BNE)" },
                 { id: "per", name: "Perth (PER)" },
@@ -563,11 +562,10 @@ export default function AirportTransfersPage() {
                 <button
                   key={tab.id}
                   onClick={() => setSelectedMeetingTab(tab.id)}
-                  className={`text-xs sm:text-sm font-semibold uppercase tracking-wider px-6 py-2.5 rounded-lg transition-all ${
-                    selectedMeetingTab === tab.id
-                      ? "bg-[#152442] text-white shadow-md"
-                      : "bg-white text-gray-600 border border-gray-200 hover:border-[#bea166] hover:text-[#152442]"
-                  }`}
+                  className={`text-xs sm:text-sm font-semibold uppercase tracking-wider px-6 py-2.5 rounded-lg transition-all ${selectedMeetingTab === tab.id
+                    ? "bg-[#152442] text-white shadow-md"
+                    : "bg-white text-gray-600 border border-gray-200 hover:border-[#bea166] hover:text-[#152442]"
+                    }`}
                 >
                   {tab.name}
                 </button>
@@ -678,9 +676,8 @@ export default function AirportTransfersPage() {
                   >
                     <span>{faq.q}</span>
                     <svg
-                      className={`w-5 h-5 text-[#bea166] transform transition-transform duration-200 flex-shrink-0 ${
-                        activeFaq === idx ? "rotate-180" : ""
-                      }`}
+                      className={`w-5 h-5 text-[#bea166] transform transition-transform duration-200 flex-shrink-0 ${activeFaq === idx ? "rotate-180" : ""
+                        }`}
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -705,7 +702,7 @@ export default function AirportTransfersPage() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/cta-bg.png"
-              alt="Hughes Chauffeur Booking"
+              alt="SYD Chauffeur Booking"
               fill
               className="object-cover object-center opacity-30"
             />

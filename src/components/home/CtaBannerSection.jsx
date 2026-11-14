@@ -7,7 +7,7 @@ export default function CtaBannerSection({ onOpenBooking }) {
       <div className="absolute inset-0 z-0 opacity-40">
         <Image
           src="/images/cta-bg.png"
-          alt="Hughes Background Pattern"
+          alt="SYD Background Pattern"
           fill
           className="object-cover object-left-top"
         />
@@ -16,10 +16,10 @@ export default function CtaBannerSection({ onOpenBooking }) {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="max-w-2xl text-center md:text-left">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Make your next journey stress-free with Hughes
+            Make your next journey stress-free with SYD
           </h2>
           <p className="text-base text-gray-300 leading-relaxed">
-            Experience the Hughes difference and take your next journey in comfort
+            Experience the SYD difference and take your next journey in comfort
             and style. Book your car today.
           </p>
         </div>

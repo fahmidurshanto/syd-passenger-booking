@@ -27,13 +27,13 @@ export default function ChauffeurExperienceSection({ onOpenBooking }) {
       href: "#fleet",
     },
     {
-      title: "The Hughes Experience",
+      title: "The SYD Experience",
       image: "/images/image-gallery-3-500x500.jpg",
       action: "The Standard",
       href: "#services",
     },
     {
-      title: "History Of Hughes",
+      title: "History Of SYD",
       image: "/images/image-gallery-2-900x500.jpg",
       action: "120+ Years Heritage",
       href: "#faq",
@@ -46,11 +46,11 @@ export default function ChauffeurExperienceSection({ onOpenBooking }) {
         {/* Intro */}
         <div className="max-w-3xl mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
-            Your Hughes Driver: Professional, Experienced, Courteous and Discreet
+            Your SYD Driver: Professional, Experienced, Courteous and Discreet
           </h2>
           <p className="text-base text-gray-300 leading-relaxed mb-8">
             We handpick our drivers for their exemplary driving records, experience with luxury
-            service and commitment to customer service and safety. Your Hughes driver will tailor
+            service and commitment to customer service and safety. Your SYD driver will tailor
             your experience to your needs, whether that’s sharing local knowledge or giving you the
             privacy, peace and quiet to relax in comfort and style.
           </p>

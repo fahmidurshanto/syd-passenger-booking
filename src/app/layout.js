@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Chauffeured Cars | Corporate Transport | Hughes Luxury Cars",
+  title: "Chauffeured Cars | Corporate Transport | SYD Luxury Cars",
   description:
-    "Experience personalised chauffeur driven luxury Hughes Chauffeured Cars. Australia's oldest and finest luxury transport company.",
+    "Experience personalised chauffeur driven luxury SYD Chauffeured Cars. Australia's oldest and finest luxury transport company.",
   icons: {
     icon: "/favicon.ico",
   },

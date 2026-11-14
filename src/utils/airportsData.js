@@ -5,7 +5,7 @@ export const airports = [
     name: "Sydney Kingsford Smith Airport",
     description: "Direct luxury transfers between Terminals 1 (International), 2 & 3 (Domestic) and Sydney CBD, North Sydney, Parramatta, and Eastern Suburbs.",
     routes: "Airport • CBD • Circular Quay • Barangaroo • North Sydney",
-    slug: "sydney-airport-transfers",
+    slug: "Sydney-airport-transfers",
   },
   {
     city: "Melbourne",

@@ -92,21 +92,19 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
         <div className="flex space-x-6">
           <button
             onClick={() => setActiveTab("book")}
-            className={`text-sm font-semibold tracking-wide uppercase transition-colors pb-1 border-b-2 ${
-              activeTab === "book"
+            className={`text-sm font-semibold tracking-wide uppercase transition-colors pb-1 border-b-2 ${activeTab === "book"
                 ? "text-[#bea166] border-[#bea166]"
                 : "text-gray-400 border-transparent hover:text-white"
-            }`}
+              }`}
           >
             Chauffeur Booking & Quote
           </button>
           <button
             onClick={() => setActiveTab("track")}
-            className={`text-sm font-semibold tracking-wide uppercase transition-colors pb-1 border-b-2 ${
-              activeTab === "track"
+            className={`text-sm font-semibold tracking-wide uppercase transition-colors pb-1 border-b-2 ${activeTab === "track"
                 ? "text-[#bea166] border-[#bea166]"
                 : "text-gray-400 border-transparent hover:text-white"
-            }`}
+              }`}
           >
             Track My Vehicle
           </button>
@@ -134,33 +132,30 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
                 <button
                   type="button"
                   onClick={() => setBookingType("transfer")}
-                  className={`py-1.5 text-xs sm:text-sm font-medium rounded-md transition ${
-                    bookingType === "transfer"
+                  className={`py-1.5 text-xs sm:text-sm font-medium rounded-md transition ${bookingType === "transfer"
                       ? "bg-white text-[#152442] shadow-sm font-semibold"
                       : "text-gray-600 hover:text-[#152442]"
-                  }`}
+                    }`}
                 >
                   One Way Transfer
                 </button>
                 <button
                   type="button"
                   onClick={() => setBookingType("return")}
-                  className={`py-1.5 text-xs sm:text-sm font-medium rounded-md transition ${
-                    bookingType === "return"
+                  className={`py-1.5 text-xs sm:text-sm font-medium rounded-md transition ${bookingType === "return"
                       ? "bg-white text-[#152442] shadow-sm font-semibold"
                       : "text-gray-600 hover:text-[#152442]"
-                  }`}
+                    }`}
                 >
                   Return Journey
                 </button>
                 <button
                   type="button"
                   onClick={() => setBookingType("hourly")}
-                  className={`py-1.5 text-xs sm:text-sm font-medium rounded-md transition ${
-                    bookingType === "hourly"
+                  className={`py-1.5 text-xs sm:text-sm font-medium rounded-md transition ${bookingType === "hourly"
                       ? "bg-white text-[#152442] shadow-sm font-semibold"
                       : "text-gray-600 hover:text-[#152442]"
-                  }`}
+                    }`}
                 >
                   By The Hour / Tour
                 </button>
@@ -303,11 +298,10 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
                       key={key}
                       type="button"
                       onClick={() => setVehicle(key)}
-                      className={`p-2.5 text-left border rounded-lg transition-all ${
-                        vehicle === key
+                      className={`p-2.5 text-left border rounded-lg transition-all ${vehicle === key
                           ? "border-[#bea166] bg-[#bea166]/10 text-[#152442] shadow-sm font-semibold"
                           : "border-gray-200 hover:border-gray-400 bg-white"
-                      }`}
+                        }`}
                     >
                       <div className="text-xs font-bold text-[#152442]">{item.name}</div>
                       <div className="text-[10px] text-gray-500 truncate">{item.example.split("/")[0]}</div>
