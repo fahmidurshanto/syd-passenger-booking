@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
+@theme {
+  --color-gold: #bea166;
+  --color-gold-hover: #ab8e54;
+  --color-navy: #152442;
+  --color-navy-light: #2a4783;
+  --color-navy-hover: #223a6b;
+  --color-slate-body: #363636;
+  --color-slate-muted: #667085;
+  --color-sand-light: #f8f8f6;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #363636;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar and subtle transitions */
+* {
+  box-sizing: border-box;
+}
+
+/* Gold button hover effects */
+.btn-gold {
+  background-color: #bea166;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background-color: #a88d55;
+  transform: translateY(-1px);
+}
+
+.btn-outline-white {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-white:hover {
+  background-color: #ffffff;
+  color: #152442;
+}
+
+.btn-outline-navy {
+  border: 2px solid #2a4783;
+  color: #2a4783;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-navy:hover {
+  background-color: #2a4783;
+  color: #ffffff;
 }
