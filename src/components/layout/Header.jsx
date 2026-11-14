@@ -193,12 +193,12 @@ export default function Header({ onOpenBooking }) {
 
           {/* Action Button & Mobile Toggle */}
           <div className="flex items-center space-x-4">
-            <button
-              onClick={onOpenBooking}
-              className="bg-[#bea166] hover:bg-[#a88d55] text-white text-xs sm:text-sm font-semibold tracking-wider uppercase px-5 py-2.5 rounded transition-all shadow-md hover:shadow-lg active:scale-95"
+            <Link
+              href="/book"
+              className="bg-[#bea166] hover:bg-[#a88d55] text-white text-xs sm:text-sm font-semibold tracking-wider uppercase px-5 py-2.5 rounded transition-all shadow-md hover:shadow-lg active:scale-95 inline-block text-center"
             >
               Book Now
-            </button>
+            </Link>
 
             {/* Mobile Hamburger Toggle */}
             <button
@@ -262,15 +262,13 @@ export default function Header({ onOpenBooking }) {
             ))}
 
             <div className="pt-2 flex flex-col space-y-3">
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenBooking();
-                }}
-                className="w-full bg-[#bea166] text-white py-3 rounded text-center font-semibold text-sm uppercase tracking-wider"
+              <Link
+                href="/book"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full bg-[#bea166] text-white py-3 rounded text-center font-semibold text-sm uppercase tracking-wider block"
               >
                 Book a Chauffeur
-              </button>
+              </Link>
               <a
                 href="tel:1300615165"
                 className="w-full border border-[#2a4783] text-[#bea166] py-2.5 rounded text-center font-semibold text-sm flex items-center justify-center"

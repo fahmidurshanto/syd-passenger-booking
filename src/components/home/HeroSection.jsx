@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }) {
   const stats = [
@@ -49,12 +50,12 @@ export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-6">
-            <button
-              onClick={onOpenBooking}
-              className="bg-[#bea166] hover:bg-[#a88d55] text-white font-semibold text-xs sm:text-sm uppercase tracking-widest px-8 py-3.5 rounded border-2 border-[#bea166] transition-all shadow-lg active:scale-95"
+            <Link
+              href="/book"
+              className="bg-[#bea166] hover:bg-[#a88d55] text-white font-semibold text-xs sm:text-sm uppercase tracking-widest px-8 py-3.5 rounded border-2 border-[#bea166] transition-all shadow-lg active:scale-95 inline-block text-center"
             >
               Book Now
-            </button>
+            </Link>
 
             <button
               onClick={onOpenManage || onOpenBooking}

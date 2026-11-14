@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Footer({ onOpenBooking }) {
   const quickLinks = [
     { name: "Airport Meeting Points", href: "#faq" },
-    { name: "Book Now", href: "#", onClick: onOpenBooking },
-    { name: "Manage Booking", href: "#", onClick: onOpenBooking },
+    { name: "Book Now", href: "/book" },
+    { name: "Manage Booking", href: "/book" },
     { name: "Contact Us", href: "#contact" },
     { name: "City Guides", href: "#locations" },
     { name: "Popular Routes", href: "#locations" },
