@@ -29,8 +29,8 @@ export default function ContactSection() {
           </h2>
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
             Our friendly Customer Service Team is on hand 24/7 to answer enquiries and keep you moving.
-            You can contact us directly on <a href="tel:1300615165" className="text-[#bea166] font-semibold">1300 615 165</a>,
-            at <a href="mailto:res@SYD.com.au" className="text-[#bea166] font-semibold">res@SYD.com.au</a> or leave your details below, and we’ll be in touch.
+            You can contact us directly on <a href="tel:+61404410000" className="text-[#bea166] font-semibold">+61 404 410 000</a>,
+            at <a href="mailto:contact@sydairporttransfer.com.au" className="text-[#bea166] font-semibold">contact@sydairporttransfer.com.au</a> or leave your details below, and we’ll be in touch.
           </p>
         </div>
 
@@ -51,16 +51,16 @@ export default function ContactSection() {
             </h3>
             <div className="space-y-1">
               <a
-                href="mailto:res@SYD.com.au"
+                href="mailto:contact@sydairporttransfer.com.au"
                 className="text-sm font-bold text-[#152442] hover:text-[#bea166] transition-colors block"
               >
-                res@SYD.com.au
+                contact@sydairporttransfer.com.au
               </a>
               <a
-                href="mailto:corporate@SYD.com.au"
+                href="mailto:contact@sydairporttransfer.com.au"
                 className="text-xs text-gray-600 hover:text-[#bea166] transition-colors block"
               >
-                corporate@SYD.com.au
+                contact@sydairporttransfer.com.au
               </a>
             </div>
           </div>
@@ -79,10 +79,10 @@ export default function ContactSection() {
               For enquiries within Australia
             </h3>
             <a
-              href="tel:1300615165"
+              href="tel:+61404410000"
               className="text-xl font-bold text-[#2a4783] hover:text-[#bea166] transition-colors block"
             >
-              1300 615 165
+              +61 404 410 000
             </a>
             <span className="text-[11px] text-gray-500 block mt-1">Available 24 Hours / 7 Days</span>
           </div>
@@ -101,10 +101,10 @@ export default function ContactSection() {
               For global enquiries
             </h3>
             <a
-              href="tel:+61293179000"
+              href="tel:+61404410000"
               className="text-lg font-bold text-[#152442] hover:text-[#bea166] transition-colors block"
             >
-              +61 2 9317 9000
+              +61 404 410 000
             </a>
             <span className="text-[11px] text-gray-500 block mt-1">International Dispatch Desk</span>
           </div>

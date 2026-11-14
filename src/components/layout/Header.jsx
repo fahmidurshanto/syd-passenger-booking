@@ -4,19 +4,28 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { navItems } from "@/utils/navData";
+import { getStoredCustomer, logoutCustomerApi } from "@/utils/customerAuth";
 
 export default function Header({ onOpenBooking }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
+  const [customer, setCustomer] = useState(null);
 
   useEffect(() => {
+    setCustomer(getStoredCustomer());
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 40);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleLogout = async () => {
+    await logoutCustomerApi();
+    setCustomer(null);
+    window.location.reload();
+  };
 
 
   return (
@@ -74,17 +83,29 @@ export default function Header({ onOpenBooking }) {
               </div>
             </div>
             <span className="text-gray-600">|</span>
-            <a
-              href="https://client.SYD.com.au/"
-              target="_blank"
-              rel="noreferrer"
-              className="text-[#d0d7e5] hover:text-[#bea166] transition-colors"
-            >
-              Sign In
-            </a>
+            {customer ? (
+              <div className="flex items-center space-x-2">
+                <span className="text-[#bea166] font-medium">Hi, {customer.fullName?.split(" ")[0]}</span>
+                <span className="text-gray-600">|</span>
+                <button
+                  type="button"
+                  onClick={handleLogout}
+                  className="text-xs text-[#d0d7e5] hover:text-white underline cursor-pointer"
+                >
+                  Log out
+                </button>
+              </div>
+            ) : (
+              <Link
+                href="/customer/login"
+                className="text-[#d0d7e5] hover:text-[#bea166] transition-colors"
+              >
+                Sign In
+              </Link>
+            )}
             <span className="text-gray-600">|</span>
             <a
-              href="tel:1300615165"
+              href="tel:+61404410000"
               className="flex items-center font-semibold text-[#bea166] hover:text-white transition-colors"
             >
               <svg
@@ -94,7 +115,7 @@ export default function Header({ onOpenBooking }) {
               >
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z" />
               </svg>
-              1300 615 165
+              +61 404 410 000
             </a>
           </div>
         </div>
@@ -195,6 +216,8 @@ export default function Header({ onOpenBooking }) {
           <div className="flex items-center space-x-4">
             <Link
               href="/book"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#bea166] hover:bg-[#a88d55] text-white text-xs sm:text-sm font-semibold tracking-wider uppercase px-5 py-2.5 rounded transition-all shadow-md hover:shadow-lg active:scale-95 inline-block text-center"
             >
               Book Now
@@ -264,16 +287,18 @@ export default function Header({ onOpenBooking }) {
             <div className="pt-2 flex flex-col space-y-3">
               <Link
                 href="/book"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full bg-[#bea166] text-white py-3 rounded text-center font-semibold text-sm uppercase tracking-wider block"
               >
                 Book a Chauffeur
               </Link>
               <a
-                href="tel:1300615165"
+                href="tel:+61404410000"
                 className="w-full border border-[#2a4783] text-[#bea166] py-2.5 rounded text-center font-semibold text-sm flex items-center justify-center"
               >
-                Call 1300 615 165
+                Call +61 404 410 000
               </a>
             </div>
           </div>

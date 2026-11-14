@@ -212,7 +212,7 @@ export default function LocationsSection({ onSelectCity }) {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
-                <span className="text-xs text-gray-400 font-mono">1300 615 165</span>
+                <span className="text-xs text-gray-400 font-mono">+61 404 410 000</span>
               </div>
             </div>
           ))}

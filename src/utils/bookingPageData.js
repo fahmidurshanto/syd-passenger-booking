@@ -1,8 +1,8 @@
 export const bookingPageData = {
   header: {
     helpText: "Help 24/7",
-    phone: "+61 2 9317 9000",
-    phoneHref: "tel:+61293179000",
+    phone: "+61 404 410 000",
+    phoneHref: "tel:+61404410000",
     loginText: "Log in",
     loginHref: "#login",
   },
@@ -40,7 +40,7 @@ export const bookingPageData = {
       id: "support",
       icon: "phone",
       title: "People, 24/7",
-      desc: "Call our reservations and live dispatch desk anytime: +61 2 9317 9000.",
+      desc: "Call our reservations and live dispatch desk anytime: +61 404 410 000.",
     },
   ],
   serviceTypes: [
@@ -106,11 +106,8 @@ export const bookingPageData = {
   footerSupport: {
     heading: "Support, 24 hours a day",
     contacts: [
-      { flag: null, label: "+61 2 9317 9000", href: "tel:+61293179000" },
-      { flag: "🇦🇺", label: "1300 615 165", href: "tel:1300615165" },
-      { flag: "🇺🇸", label: "(888) 389-1908", href: "tel:8883891908" },
-      { flag: "🇳🇿", label: "0800 446 493", href: "tel:0800446493" },
-      { flag: null, label: "res@SYDairporttransfer.com.au", href: "mailto:res@SYDairporttransfer.com.au" },
+      { flag: "🇦🇺", label: "+61 404 410 000", href: "tel:+61404410000" },
+      { flag: null, label: "contact@sydairporttransfer.com.au", href: "mailto:contact@sydairporttransfer.com.au" },
     ],
     feedbackText: "Send us feedback",
     copyright: "© 2026 SYD Airport Transfer Services Pty Ltd",

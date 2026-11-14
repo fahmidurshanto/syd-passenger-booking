@@ -52,6 +52,8 @@ export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-6">
             <Link
               href="/book"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#bea166] hover:bg-[#a88d55] text-white font-semibold text-xs sm:text-sm uppercase tracking-widest px-8 py-3.5 rounded border-2 border-[#bea166] transition-all shadow-lg active:scale-95 inline-block text-center"
             >
               Book Now

@@ -12,7 +12,7 @@ export default function FaqSection() {
     },
     {
       q: "How do I book a chauffeur with SYD?",
-      a: "You can book a SYD chauffeur online at hire.SYD.com.au for an instant quote and confirmation, through the SYD App available on iOS and Android, or by calling 1300 615 165 (Australia) or +61 2 9317 9000 (International). We recommend booking in advance for peak periods, though same-day bookings are available subject to vehicle availability.",
+      a: "You can book a SYD chauffeur online at hire.SYD.com.au for an instant quote and confirmation, through the SYD App available on iOS and Android, or by calling +61 404 410 000 (Australia) or +61 404 410 000 (International). We recommend booking in advance for peak periods, though same-day bookings are available subject to vehicle availability.",
     },
     {
       q: "What types of vehicles are in the SYD fleet?",
@@ -20,7 +20,7 @@ export default function FaqSection() {
     },
     {
       q: "Does SYD offer corporate accounts?",
-      a: "Yes, SYD offers corporate accounts with monthly invoicing, dedicated account management, priority bookings, generous corporate rates and comprehensive reporting for expense management. Corporate accounts can be set up through our website or by contacting corporate@SYD.com.au. We support duty of care compliance and can manage transport for conferences, road shows, board meetings and regular executive travel.",
+      a: "Yes, SYD offers corporate accounts with monthly invoicing, dedicated account management, priority bookings, generous corporate rates and comprehensive reporting for expense management. Corporate accounts can be set up through our website or by contacting contact@sydairporttransfer.com.au. We support duty of care compliance and can manage transport for conferences, road shows, board meetings and regular executive travel.",
     },
     {
       q: "What happens if my flight is delayed?",

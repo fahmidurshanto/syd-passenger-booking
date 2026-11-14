@@ -10,6 +10,7 @@ import { useLocationAutocomplete, POPULAR_AU_HUBS } from "@/utils/useLocationAut
 import { getStripe } from "@/utils/stripe";
 import { calculateStripeSurcharge } from "@/utils/stripeFee";
 import StripePaymentForm from "@/components/booking/StripePaymentForm";
+import { getStoredCustomer, fetchCurrentCustomer, logoutCustomerApi } from "@/utils/customerAuth";
 
 // Dynamic import with SSR disabled for Leaflet map component
 const BookingMiniMap = dynamic(
@@ -80,8 +81,8 @@ export default function BookPage() {
   const [showVoucher, setShowVoucher] = useState(false);
   const [voucherCode, setVoucherCode] = useState("");
 
-  // Payment Method
-  const [paymentMethod, setPaymentMethod] = useState("card"); // 'card' | 'corporate'
+  // Payment Method: 'card' | 'cash'
+  const [paymentMethod, setPaymentMethod] = useState("card");
 
   // Stripe & Booking Submission State
   const [isSubmittingBooking, setIsSubmittingBooking] = useState(false);
@@ -90,6 +91,39 @@ export default function BookPage() {
   const [clientSecret, setClientSecret] = useState("");
   const [publishableKey, setPublishableKey] = useState("");
   const [paymentSuccessData, setPaymentSuccessData] = useState(null);
+
+  // Logged-in Customer State
+  const [customer, setCustomer] = useState(null);
+
+  useEffect(() => {
+    const existing = getStoredCustomer();
+    if (existing) {
+      setCustomer(existing);
+      autoFillPassenger(existing);
+    }
+    fetchCurrentCustomer().then((cust) => {
+      if (cust) {
+        setCustomer(cust);
+        autoFillPassenger(cust);
+      }
+    });
+  }, []);
+
+  const autoFillPassenger = (cust) => {
+    if (!cust) return;
+    if (cust.fullName) {
+      const parts = cust.fullName.trim().split(" ");
+      setPassengerFirstName(parts[0] || "");
+      setPassengerLastName(parts.slice(1).join(" ") || "");
+      setPickupSignName(cust.fullName);
+    }
+    if (cust.email) {
+      setPassengerEmail(cust.email);
+    }
+    if (cust.phone) {
+      setPassengerMobile(cust.phone.replace("+61", "").replace("+880", "").trim());
+    }
+  };
 
   const pickupContainerRef = useRef(null);
   const dropoffContainerRef = useRef(null);
@@ -234,7 +268,7 @@ export default function BookPage() {
         ]
           .filter(Boolean)
           .join(" | "),
-        paymentMethod: paymentMethod === "corporate" ? "corporate" : "online",
+        paymentMethod: paymentMethod === "cash" ? "cash" : "online",
         fare: {
           currency: "AUD",
           baseFare: feeCalc.baseFare,
@@ -268,17 +302,7 @@ export default function BookPage() {
       const activeBooking = bookingData.booking || bookingData;
       setCreatedBooking(activeBooking);
 
-      // 2. If Corporate payment selected, finish directly
-      if (paymentMethod === "corporate") {
-        setPaymentSuccessData({
-          paymentMethod: "corporate",
-          bookingNumber: activeBooking.bookingNumber,
-        });
-        setIsSubmittingBooking(false);
-        return;
-      }
-
-      // 3. Create Stripe PaymentIntent on backend
+      // 2. Create Stripe PaymentIntent on backend
       const intentRes = await fetch(`${API_BASE}/payments/create-intent`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -384,15 +408,35 @@ export default function BookPage() {
                 {header.phone}
               </a>
             </div>
-            <a
-              href={header.loginHref}
-              className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded border border-slate-600 hover:border-slate-400 text-slate-200 hover:text-white text-xs font-medium transition-colors"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-              </svg>
-              <span>{header.loginText}</span>
-            </a>
+
+            {customer ? (
+              <div className="flex items-center space-x-2 text-xs">
+                <span className="text-[#bea166] font-medium hidden sm:inline">
+                  Hi, {customer.fullName?.split(" ")[0]}
+                </span>
+                <button
+                  type="button"
+                  onClick={async () => {
+                    await logoutCustomerApi();
+                    setCustomer(null);
+                    window.location.reload();
+                  }}
+                  className="px-3 py-1.5 rounded border border-slate-600 hover:border-slate-400 text-slate-200 hover:text-white text-xs font-medium cursor-pointer"
+                >
+                  Log out
+                </button>
+              </div>
+            ) : (
+              <Link
+                href="/customer/login"
+                className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded border border-slate-600 hover:border-slate-400 text-slate-200 hover:text-white text-xs font-medium transition-colors"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <span>{header.loginText}</span>
+              </Link>
+            )}
           </div>
         </div>
       </header>
@@ -1004,24 +1048,24 @@ export default function BookPage() {
                     <p>
                       <strong>{passengers} passenger</strong>,{" "}
                       <span className="underline font-semibold">{totalBags} bags</span>. That&apos;s more than one vehicle takes. Call us on{" "}
-                      <a href="tel:+61293179000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                      <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                         <span>🌐</span>
-                        <span>+61 2 9317 9000</span>
+                        <span>+61 404 410 000</span>
                       </a>
                       ,{" "}
-                      <a href="tel:1300615165" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                      <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                         <span>🇦🇺</span>
-                        <span>1300 615 165</span>
+                        <span>+61 404 410 000</span>
                       </a>
                       ,{" "}
                       <a href="tel:18883891908" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                         <span>🇺🇸</span>
-                        <span>(888) 389-1908</span>
+                        <span>+61 404 410 000</span>
                       </a>{" "}
                       or{" "}
-                      <a href="tel:0800446493" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                      <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                         <span>🇳🇿</span>
-                        <span>0800 446 493</span>
+                        <span>+61 404 410 000</span>
                       </a>{" "}
                       and we&apos;ll arrange it.
                     </p>
@@ -1035,24 +1079,24 @@ export default function BookPage() {
                   </p>
                   <p className="mt-0.5">
                     Please call Syd on{" "}
-                    <a href="tel:+61293179000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                    <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                       <span>🌐</span>
-                      <span>+61 2 9317 9000</span>
+                      <span>+61 404 410 000</span>
                     </a>
                     ,{" "}
-                    <a href="tel:1300615165" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                    <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                       <span>🇦🇺</span>
-                      <span>1300 615 165</span>
+                      <span>+61 404 410 000</span>
                     </a>
                     ,{" "}
                     <a href="tel:18883891908" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                       <span>🇺🇸</span>
-                      <span>(888) 389-1908</span>
+                      <span>+61 404 410 000</span>
                     </a>{" "}
                     or{" "}
-                    <a href="tel:0800446493" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                    <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                       <span>🇳🇿</span>
-                      <span>0800 446 493</span>
+                      <span>+61 404 410 000</span>
                     </a>
                     .
                   </p>
@@ -1089,15 +1133,33 @@ export default function BookPage() {
                       👤
                     </span>
                     <span>
-                      <strong className="text-slate-900">Booked with us before?</strong> Log in and we&apos;ll fill this in.
+                      {customer ? (
+                        <>
+                          Signed in as <strong className="text-slate-900">{customer.fullName}</strong> ({customer.email}).
+                        </>
+                      ) : (
+                        <>
+                          <strong className="text-slate-900">Booked with us before?</strong> Log in and we&apos;ll fill this in.
+                        </>
+                      )}
                     </span>
                   </div>
-                  <a
-                    href="#login"
-                    className="text-blue-700 hover:text-blue-900 underline font-semibold shrink-0"
-                  >
-                    Log in
-                  </a>
+                  {customer ? (
+                    <button
+                      type="button"
+                      onClick={() => autoFillPassenger(customer)}
+                      className="text-blue-700 hover:text-blue-900 underline font-semibold shrink-0 cursor-pointer"
+                    >
+                      Fill My Details
+                    </button>
+                  ) : (
+                    <Link
+                      href="/customer/login"
+                      className="text-blue-700 hover:text-blue-900 underline font-semibold shrink-0"
+                    >
+                      Log in
+                    </Link>
+                  )}
                 </div>
 
                 {/* 3. Passenger Details Form */}
@@ -1345,34 +1407,6 @@ export default function BookPage() {
                           AMEX
                         </span>
                         <span className="text-xs text-slate-400 pl-1">▼</span>
-                      </div>
-                    </div>
-
-                    {/* Option 2: Syd corporate account */}
-                    <div
-                      onClick={() => setPaymentMethod("corporate")}
-                      className={`p-4 rounded-2xl border transition-all cursor-pointer flex items-center justify-between gap-4 ${paymentMethod === "corporate"
-                        ? "border-slate-900 ring-2 ring-slate-900/10 bg-white shadow-xs"
-                        : "border-slate-200 hover:border-slate-300 bg-white"
-                        }`}
-                    >
-                      <div className="flex items-center space-x-3">
-                        <div className={`w-4 h-4 rounded-full border flex items-center justify-center ${paymentMethod === "corporate"
-                          ? "border-slate-900"
-                          : "border-slate-300"
-                          }`}>
-                          {paymentMethod === "corporate" && (
-                            <div className="w-2 h-2 rounded-full bg-slate-900" />
-                          )}
-                        </div>
-                        <div>
-                          <span className="text-xs sm:text-sm font-semibold text-slate-900 block">
-                            Syd corporate account
-                          </span>
-                          <span className="text-[11px] text-slate-500 block">
-                            Charge the booking to your company account
-                          </span>
-                        </div>
                       </div>
                     </div>
                   </div>

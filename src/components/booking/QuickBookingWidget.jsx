@@ -338,13 +338,13 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
               {/* Action Buttons */}
               <div className="pt-2 flex items-center justify-between">
                 <a
-                  href="tel:1300615165"
+                  href="tel:+61404410000"
                   className="text-xs text-gray-600 hover:text-[#152442] flex items-center"
                 >
                   <svg className="w-3.5 h-3.5 mr-1 text-[#bea166]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z" />
                   </svg>
-                  Prefer to call? 1300 615 165
+                  Prefer to call? +61 404 410 000
                 </a>
 
                 <button
