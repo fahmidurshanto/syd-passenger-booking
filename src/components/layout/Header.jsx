@@ -155,61 +155,77 @@ export default function Header({ onOpenBooking }) {
 
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center space-x-1 xl:space-x-2">
-            {navItems.map((item, idx) => (
-              <div
-                key={idx}
-                className="relative"
-                onMouseEnter={() => setActiveDropdown(idx)}
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
-                <Link
-                  href={item.href}
-                  className="px-3 py-2 text-sm font-medium text-white hover:text-[#bea166] transition-colors flex items-center group"
-                >
-                  <span>{item.title}</span>
-                  <svg
-                    className="w-3.5 h-3.5 ml-1 text-gray-400 group-hover:text-[#bea166] transition-transform duration-200"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </Link>
+            {navItems.map((item, idx) => {
+              const hasDropdown = Boolean(item.columns && item.columns.length > 0);
 
-                {/* Dropdown Menu */}
-                {activeDropdown === idx && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
-                    <div className="bg-[#152442] border border-[#2a4783] rounded-lg shadow-2xl p-6 min-w-[520px] grid grid-cols-2 gap-6 animate-fadeIn">
-                      {item.columns.map((col, cIdx) => (
-                        <div key={cIdx} className="space-y-3">
-                          <h4 className="text-xs uppercase tracking-wider font-semibold text-[#bea166] border-b border-[#22365e] pb-1.5">
-                            {col.title}
-                          </h4>
-                          <ul className="space-y-2">
-                            {col.links.map((link, lIdx) => (
-                              <li key={lIdx}>
-                                <a
-                                  href={link.href}
-                                  className="text-xs text-gray-300 hover:text-white hover:translate-x-1 transition-all inline-block"
-                                >
-                                  {link.name}
-                                </a>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
+              if (!hasDropdown) {
+                return (
+                  <Link
+                    key={idx}
+                    href={item.href}
+                    className="px-3 py-2 text-sm font-medium text-white hover:text-[#bea166] transition-colors"
+                  >
+                    {item.title}
+                  </Link>
+                );
+              }
+
+              return (
+                <div
+                  key={idx}
+                  className="relative"
+                  onMouseEnter={() => setActiveDropdown(idx)}
+                  onMouseLeave={() => setActiveDropdown(null)}
+                >
+                  <Link
+                    href={item.href}
+                    className="px-3 py-2 text-sm font-medium text-white hover:text-[#bea166] transition-colors flex items-center group"
+                  >
+                    <span>{item.title}</span>
+                    <svg
+                      className="w-3.5 h-3.5 ml-1 text-gray-400 group-hover:text-[#bea166] transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </Link>
+
+                  {/* Dropdown Menu */}
+                  {activeDropdown === idx && (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 z-50">
+                      <div className="bg-[#152442] border border-[#2a4783] rounded-lg shadow-2xl p-6 min-w-[520px] grid grid-cols-2 gap-6 animate-fadeIn">
+                        {item.columns.map((col, cIdx) => (
+                          <div key={cIdx} className="space-y-3">
+                            <h4 className="text-xs uppercase tracking-wider font-semibold text-[#bea166] border-b border-[#22365e] pb-1.5">
+                              {col.title}
+                            </h4>
+                            <ul className="space-y-2">
+                              {col.links.map((link, lIdx) => (
+                                <li key={lIdx}>
+                                  <Link
+                                    href={link.href}
+                                    className="text-xs text-gray-300 hover:text-white hover:translate-x-1 transition-all inline-block"
+                                  >
+                                    {link.name}
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              );
+            })}
           </div>
 
           {/* Action Button & Mobile Toggle */}
@@ -258,31 +274,36 @@ export default function Header({ onOpenBooking }) {
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
           <div className="lg:hidden bg-[#152442] border-t border-[#22365e] px-6 py-6 space-y-6 max-h-[85vh] overflow-y-auto">
-            {navItems.map((item, idx) => (
-              <div key={idx} className="border-b border-[#22365e] pb-4">
-                <a
-                  href={item.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-semibold text-[#bea166] block mb-2"
-                >
-                  {item.title}
-                </a>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-2">
-                  {item.columns.flatMap((col) =>
-                    col.links.map((link, lIdx) => (
-                      <a
-                        key={lIdx}
-                        href={link.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="text-xs text-gray-300 hover:text-white py-1 block"
-                      >
-                        {link.name}
-                      </a>
-                    ))
+            {navItems.map((item, idx) => {
+              const hasDropdown = Boolean(item.columns && item.columns.length > 0);
+              return (
+                <div key={idx} className="border-b border-[#22365e] pb-4">
+                  <Link
+                    href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-base font-semibold text-[#bea166] hover:text-white transition-colors block mb-2"
+                  >
+                    {item.title}
+                  </Link>
+                  {hasDropdown && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pl-2">
+                      {item.columns.flatMap((col) =>
+                        col.links.map((link, lIdx) => (
+                          <Link
+                            key={lIdx}
+                            href={link.href}
+                            onClick={() => setMobileMenuOpen(false)}
+                            className="text-xs text-gray-300 hover:text-white py-1 block"
+                          >
+                            {link.name}
+                          </Link>
+                        ))
+                      )}
+                    </div>
                   )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
 
             <div className="pt-2 flex flex-col space-y-3">
               <Link

@@ -529,9 +529,12 @@ export const navItems = [
                 links: [
                     { name: "Frequently Asked Questions", href: "/about-us/faq", description: "Find instant answers to common questions about booking procedures, child seats, cancellations, and luggage." },
                     { name: "Careers & Join The Fleet", href: "/about-us/careers", description: "Join Australia's most respected chauffeur team as an accredited driver or independent luxury vehicle operator." },
-                    { name: "Contact Our 24/7 Team", href: "/about-us/contact", description: "Connect directly with our 24/7 reservations and customer support specialists for bookings and personalized inquiries." },
                 ],
             },
         ],
+    },
+    {
+        title: "Contact Us",
+        href: "/contact-us",
     },
 ];

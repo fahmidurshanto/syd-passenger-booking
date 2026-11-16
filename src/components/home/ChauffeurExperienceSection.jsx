@@ -12,7 +12,7 @@ export default function ChauffeurExperienceSection({ onOpenBooking }) {
       title: "Join Our Team",
       image: "/images/image-gallery-5-500x500.jpg",
       action: "Explore Careers",
-      href: "#contact",
+      href: "/about-us/careers",
     },
     {
       title: "Airline & Cruise Crewing",

@@ -253,36 +253,6 @@ export const aboutPages = [
       },
     ],
   },
-  {
-    id: "contact",
-    slug: "contact",
-    aliases: ["contact", "contact-us", "help"],
-    title: "Contact Our 24/7 Team",
-    heroTitle: "We're Here to Help 24 Hours a Day",
-    heroSubtitle: "Connect directly with our national reservations desk, corporate account managers, and live flight controllers for bookings and inquiries.",
-    coverImage: "/images/about/about-hero.jpg",
-    cardImage: "/images/contact-bg-2.jpg",
-    lead: "Whether you need to reserve an airport transfer, request a corporate quotation, or modify an existing itinerary, our friendly Australian team is on standby 24/7.",
-    paragraphs: [
-      "Reach out to us by phone, email, or online. For urgent bookings or flight changes happening within the next 4 hours, please call our 24/7 dispatch hotline directly.",
-    ],
-    highlights: [
-      "National Reservations Hotline: 1300 615 165 / +61 404 410 000",
-      "International Callers: +61 2 9317 9000",
-      "General Reservations Email: reservations@sydchauffeurs.com.au",
-      "Corporate Accounts Desk: corporate@sydchauffeurs.com.au",
-    ],
-    faqs: [
-      {
-        q: "What are your customer service operating hours?",
-        a: "Our customer service, booking, and dispatch team operates 24 hours a day, 7 days a week, 365 days a year without exception.",
-      },
-      {
-        q: "How quickly do you respond to online inquiries?",
-        a: "Online quote requests and booking adjustments are typically confirmed within 15–30 minutes by our 24/7 dispatch desk.",
-      },
-    ],
-  },
 ];
 
 export const aboutUsOverviewFaqs = [

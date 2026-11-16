@@ -6,7 +6,7 @@ export default function Footer({ onOpenBooking }) {
     { name: "Airport Meeting Points", href: "#faq" },
     { name: "Book Now", href: "/book" },
     { name: "Manage Booking", href: "/book" },
-    { name: "Contact Us", href: "#contact" },
+    { name: "Contact Us", href: "/contact-us" },
     { name: "City Guides", href: "#locations" },
     { name: "Popular Routes", href: "#locations" },
     { name: "Corporate Transfers", href: "#services" },
@@ -231,7 +231,7 @@ export default function Footer({ onOpenBooking }) {
             © 2026 SYD - ALL RIGHTS RESERVED
           </div>
           <div className="flex items-center space-x-4">
-            <Link href="#contact" className="hover:text-[#bea166] transition">Contact</Link>
+            <Link href="/contact-us" className="hover:text-[#bea166] transition">Contact</Link>
             <span>|</span>
             <Link href="#services" className="hover:text-[#bea166] transition">Sitemap</Link>
             <span>|</span>
