@@ -10,7 +10,6 @@ export default function CustomerLoginPage() {
   const router = useRouter();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [accountNumber, setAccountNumber] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -131,25 +130,6 @@ export default function CustomerLoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
-                  className="w-full py-3.5 pr-4 text-sm text-white placeholder-sky-200/50 bg-transparent focus:outline-none font-normal"
-                />
-              </div>
-            </div>
-
-            {/* 3. Account Number Field */}
-            <div className="space-y-1.5">
-              <label className="block text-xs sm:text-sm font-medium text-slate-200">
-                Account Number
-              </label>
-              <div className="relative flex items-center rounded-xl bg-[#08366d] border border-[#165eb3] focus-within:border-sky-400 focus-within:ring-1 focus-within:ring-sky-400 transition-all shadow-inner">
-                <span className="pl-4 pr-2 text-sky-300 font-bold text-sm">
-                  #
-                </span>
-                <input
-                  type="text"
-                  value={accountNumber}
-                  onChange={(e) => setAccountNumber(e.target.value)}
-                  placeholder="Enter your Account Number"
                   className="w-full py-3.5 pr-4 text-sm text-white placeholder-sky-200/50 bg-transparent focus:outline-none font-normal"
                 />
               </div>
