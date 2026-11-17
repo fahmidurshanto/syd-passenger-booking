@@ -10,7 +10,6 @@ import LocationsSection from "../components/home/LocationsSection";
 import ChauffeurExperienceSection from "../components/home/ChauffeurExperienceSection";
 import BrandsSection from "../components/home/BrandsSection";
 import CtaBannerSection from "../components/home/CtaBannerSection";
-import AppDownloadSection from "../components/home/AppDownloadSection";
 import FaqSection from "../components/home/FaqSection";
 import ContactSection from "../components/home/ContactSection";
 import BookingModal from "../components/booking/BookingModal";
@@ -100,9 +99,6 @@ export default function Home() {
 
         {/* Make Your Next Journey Stress-Free CTA */}
         <CtaBannerSection onOpenBooking={handleOpenBooking} />
-
-        {/* SYD Mobile App Download */}
-        <AppDownloadSection />
 
         {/* 10 Comprehensive FAQs */}
         <FaqSection />

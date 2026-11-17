@@ -33,9 +33,9 @@ export default function Footer({ onOpenBooking }) {
   return (
     <footer className="bg-[#152442] text-white pt-16 pb-8 border-t border-[#22365e]">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
-        {/* Top Summary & App Download */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-12 border-b border-[#22365e] items-center">
-          <div className="lg:col-span-8">
+        {/* Top Summary */}
+        <div className="pb-12 border-b border-[#22365e]">
+          <div>
             <div className="flex items-center space-x-3 mb-4">
               <div className="relative h-11 w-11 rounded-full overflow-hidden shrink-0">
                 <Image
@@ -63,42 +63,6 @@ export default function Footer({ onOpenBooking }) {
               Brisbane, Perth, Adelaide, and more. With a network of first-class drivers, SYD ensures
               unparalleled service nationwide.
             </p>
-          </div>
-
-          <div className="lg:col-span-4 flex flex-col lg:items-end space-y-3">
-            <span className="text-xs uppercase font-bold tracking-widest text-[#bea166]">
-              DOWNLOAD THE SYD APP
-            </span>
-            <div className="flex items-center space-x-3">
-              <a
-                href="https://apps.apple.com/pl/app/SYD-chauffeur-service/id1533756887#?platform=iphone"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:opacity-80 transition"
-              >
-                <Image
-                  src="/images/w_app-store.svg"
-                  alt="App Store"
-                  width={110}
-                  height={34}
-                  className="h-9 w-auto object-contain"
-                />
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=au.com.SYDlimousines.publicapp&hl=en_AU"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:opacity-80 transition"
-              >
-                <Image
-                  src="/images/w_google-play.svg"
-                  alt="Google Play"
-                  width={110}
-                  height={34}
-                  className="h-9 w-auto object-contain"
-                />
-              </a>
-            </div>
           </div>
         </div>
 

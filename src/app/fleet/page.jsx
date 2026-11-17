@@ -427,68 +427,6 @@ export default function FleetPage() {
           </div>
         </section>
 
-        {/* App Download Strip */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-8">
-            <div className="bg-gradient-to-r from-[#152442] to-[#223a6b] rounded-3xl p-8 sm:p-14 text-white overflow-hidden relative shadow-2xl">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-                <div className="lg:col-span-7 space-y-5">
-                  <span className="bg-[#bea166]/20 border border-[#bea166]/40 text-[#bea166] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full inline-block">
-                    SMARTPHONE CONTROL
-                  </span>
-                  <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
-                    Download the SYD Mobile App
-                  </h2>
-                  <p className="text-gray-200 text-sm sm:text-base leading-relaxed max-w-xl">
-                    Most convenient way to schedule and track bookings across Australia. Real-time driver telemetry, automated flight tracking, and instant digital expense receipts.
-                  </p>
-                  <div className="flex flex-wrap items-center gap-4 pt-2">
-                    <a
-                      href="https://apps.apple.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block hover:opacity-90 transition active:scale-95"
-                    >
-                      <Image
-                        src="/images/App-Store-1.png"
-                        alt="Download SYD App on Apple App Store"
-                        width={150}
-                        height={46}
-                        className="h-11 w-auto object-contain"
-                      />
-                    </a>
-                    <a
-                      href="https://play.google.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block hover:opacity-90 transition active:scale-95"
-                    >
-                      <Image
-                        src="/images/Google-Play-1.png"
-                        alt="Download SYD App on Google Play Store"
-                        width={150}
-                        height={46}
-                        className="h-11 w-auto object-contain"
-                      />
-                    </a>
-                  </div>
-                </div>
-
-                <div className="lg:col-span-5 flex justify-center">
-                  <div className="relative w-64 h-80 sm:h-96">
-                    <Image
-                      src="/images/mobile-app-pop-up-image.png"
-                      alt="SYD Chauffeur Mobile Application Preview"
-                      fill
-                      className="object-contain drop-shadow-2xl"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Final Booking Callout Strip */}
         <section className="py-16 bg-[#152442] text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
