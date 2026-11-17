@@ -29,7 +29,7 @@ export default function ContactSection() {
           </h2>
           <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
             Our friendly Customer Service Team is on hand 24/7 to answer enquiries and keep you moving.
-            You can contact us directly on <a href="tel:+61404410000" className="text-[#bea166] font-semibold">+61 404 410 000</a>,
+            You can contact us directly on <a href="tel:+6140441000+" className="text-[#bea166] font-semibold">+61 404 410 000</a>,
             at <a href="mailto:contact@sydairporttransfer.com.au" className="text-[#bea166] font-semibold">contact@sydairporttransfer.com.au</a> or leave your details below, and we’ll be in touch.
           </p>
         </div>
@@ -79,7 +79,7 @@ export default function ContactSection() {
               For enquiries within Australia
             </h3>
             <a
-              href="tel:+61404410000"
+              href="tel:+6140441000+"
               className="text-xl font-bold text-[#2a4783] hover:text-[#bea166] transition-colors block"
             >
               +61 404 410 000
@@ -101,7 +101,7 @@ export default function ContactSection() {
               For global enquiries
             </h3>
             <a
-              href="tel:+61404410000"
+              href="tel:+6140441000+"
               className="text-lg font-bold text-[#152442] hover:text-[#bea166] transition-colors block"
             >
               +61 404 410 000

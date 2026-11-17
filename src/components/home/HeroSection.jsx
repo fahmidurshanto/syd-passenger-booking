@@ -6,19 +6,19 @@ import Link from "next/link";
 export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }) {
   const stats = [
     {
-      value: "2.95m",
+      value: "10000",
       label: "Passengers moved last 12 months",
     },
     {
-      value: "14,000+",
+      value: "1000+",
       label: "5 Star Google Reviews",
     },
     {
-      value: "13",
+      value: "5",
       label: "Offices across Australia, NZ & Singapore",
     },
     {
-      value: "1500+",
+      value: "250+",
       label: "Size of fleet",
     },
   ];
@@ -59,12 +59,12 @@ export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }
               Book Now
             </Link>
 
-            <button
-              onClick={onOpenManage || onOpenBooking}
-              className="border-2 border-white text-white hover:bg-white hover:text-[#152442] font-semibold text-xs sm:text-sm uppercase tracking-widest px-8 py-3.5 rounded transition-all shadow-lg active:scale-95"
+            <Link
+              href="/manage-booking"
+              className="border-2 border-white text-white hover:bg-white hover:text-[#152442] font-semibold text-xs sm:text-sm uppercase tracking-widest px-8 py-3.5 rounded transition-all shadow-lg active:scale-95 inline-block text-center"
             >
               Manage Booking
-            </button>
+            </Link>
 
             <button
               onClick={onOpenQuote || onOpenBooking}
@@ -76,9 +76,9 @@ export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }
 
           {/* Track Link */}
           <div>
-            <button
-              onClick={onOpenManage || onOpenBooking}
-              className="text-white hover:text-[#bea166] text-sm font-medium underline underline-offset-4 flex items-center transition-colors"
+            <Link
+              href="/manage-booking"
+              className="text-white hover:text-[#bea166] text-sm font-medium underline underline-offset-4 flex items-center transition-colors inline-flex"
             >
               <svg
                 className="w-4 h-4 mr-1.5 text-[#bea166]"
@@ -100,7 +100,7 @@ export default function HeroSection({ onOpenBooking, onOpenManage, onOpenQuote }
                 />
               </svg>
               Track my Vehicle
-            </button>
+            </Link>
           </div>
         </div>
       </div>

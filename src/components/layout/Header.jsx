@@ -35,7 +35,7 @@ export default function Header({ onOpenBooking }) {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="hidden md:flex items-center space-x-6 text-[#d0d7e5]">
             <span>Australia&apos;s Chauffeur Service Since 1904</span>
-            <span className="text-[#bea166]">★ 14,000+ 5-Star Reviews</span>
+            <span className="text-[#bea166]">★ 1000+ 5-Star Reviews</span>
           </div>
 
           <div className="flex items-center space-x-5 ml-auto text-xs">
@@ -105,7 +105,7 @@ export default function Header({ onOpenBooking }) {
             )}
             <span className="text-gray-600">|</span>
             <a
-              href="tel:+61404410000"
+              href="tel:+6140441000+"
               className="flex items-center font-semibold text-[#bea166] hover:text-white transition-colors"
             >
               <svg
@@ -316,7 +316,7 @@ export default function Header({ onOpenBooking }) {
                 Book a Chauffeur
               </Link>
               <a
-                href="tel:+61404410000"
+                href="tel:+6140441000+"
                 className="w-full border border-[#2a4783] text-[#bea166] py-2.5 rounded text-center font-semibold text-sm flex items-center justify-center"
               >
                 Call +61 404 410 000

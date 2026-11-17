@@ -7,7 +7,7 @@ export const fleetOverviewStats = [
   { value: "100%", label: "Late-Model Prestige Vehicles" },
   { value: "1 - 54+", label: "Passenger Seating Capacities" },
   { value: "24/7", label: "Real-Time GPS Fleet Dispatch" },
-  { value: "14,000+", label: "5-Star Passenger Reviews" },
+  { value: "1000+", label: "5-Star Passenger Reviews" },
 ];
 
 export const fleetList = [

@@ -68,8 +68,8 @@ export default function LocationsPage() {
     selectedOfficeTab === "all"
       ? officeLocations
       : selectedOfficeTab === "australia"
-      ? officeLocations.filter((o) => o.country === "Australia")
-      : officeLocations.filter((o) => o.country !== "Australia");
+        ? officeLocations.filter((o) => o.country === "Australia")
+        : officeLocations.filter((o) => o.country !== "Australia");
 
   const currentFleet = fleetOptions[selectedFleet] || fleetOptions.executive;
 
@@ -134,7 +134,7 @@ export default function LocationsPage() {
                 </button>
 
                 <a
-                  href="tel:+61404410000"
+                  href="tel:+6140441000+"
                   className="border-2 border-transparent text-[#bea166] hover:text-white font-semibold text-xs sm:text-sm uppercase tracking-widest px-4 py-3.5 rounded transition-all flex items-center space-x-2"
                 >
                   <svg className="w-4 h-4 mr-1 text-[#bea166]" fill="currentColor" viewBox="0 0 20 20">
@@ -243,11 +243,10 @@ export default function LocationsPage() {
                   <button
                     key={region.id}
                     onClick={() => setActiveRegion(region.id)}
-                    className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${
-                      activeRegion === region.id
-                        ? "bg-[#152442] text-white shadow-md"
-                        : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-100"
-                    }`}
+                    className={`px-4 py-2 rounded-full text-xs font-semibold transition-all ${activeRegion === region.id
+                      ? "bg-[#152442] text-white shadow-md"
+                      : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-100"
+                      }`}
                   >
                     {region.label}
                   </button>
@@ -364,31 +363,28 @@ export default function LocationsPage() {
                 <div className="flex space-x-2 pt-2">
                   <button
                     onClick={() => setSelectedOfficeTab("all")}
-                    className={`px-3 py-1.5 rounded text-xs font-semibold uppercase tracking-wider ${
-                      selectedOfficeTab === "all"
-                        ? "bg-[#152442] text-white"
-                        : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    }`}
+                    className={`px-3 py-1.5 rounded text-xs font-semibold uppercase tracking-wider ${selectedOfficeTab === "all"
+                      ? "bg-[#152442] text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                      }`}
                   >
                     All Offices ({officeLocations.length})
                   </button>
                   <button
                     onClick={() => setSelectedOfficeTab("australia")}
-                    className={`px-3 py-1.5 rounded text-xs font-semibold uppercase tracking-wider ${
-                      selectedOfficeTab === "australia"
-                        ? "bg-[#152442] text-white"
-                        : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    }`}
+                    className={`px-3 py-1.5 rounded text-xs font-semibold uppercase tracking-wider ${selectedOfficeTab === "australia"
+                      ? "bg-[#152442] text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                      }`}
                   >
                     Australia
                   </button>
                   <button
                     onClick={() => setSelectedOfficeTab("international")}
-                    className={`px-3 py-1.5 rounded text-xs font-semibold uppercase tracking-wider ${
-                      selectedOfficeTab === "international"
-                        ? "bg-[#152442] text-white"
-                        : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                    }`}
+                    className={`px-3 py-1.5 rounded text-xs font-semibold uppercase tracking-wider ${selectedOfficeTab === "international"
+                      ? "bg-[#152442] text-white"
+                      : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                      }`}
                   >
                     International
                   </button>
@@ -491,11 +487,10 @@ export default function LocationsPage() {
                   <button
                     key={key}
                     onClick={() => setSelectedFleet(key)}
-                    className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
-                      isActive
-                        ? "bg-[#152442] text-white shadow-md"
-                        : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-100"
-                    }`}
+                    className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${isActive
+                      ? "bg-[#152442] text-white shadow-md"
+                      : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-100"
+                      }`}
                   >
                     {opt.name.split(" ")[0]} {opt.name.split(" ")[1] || ""}
                   </button>
@@ -623,7 +618,7 @@ export default function LocationsPage() {
                 Book Now
               </button>
               <a
-                href="tel:+61404410000"
+                href="tel:+6140441000+"
                 className="border border-white/30 text-white hover:bg-white/10 text-xs sm:text-sm font-semibold uppercase tracking-wider px-6 py-3.5 rounded transition"
               >
                 Call 24/7 Team

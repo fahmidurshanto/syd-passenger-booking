@@ -93,8 +93,8 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
           <button
             onClick={() => setActiveTab("book")}
             className={`text-sm font-semibold tracking-wide uppercase transition-colors pb-1 border-b-2 ${activeTab === "book"
-                ? "text-[#bea166] border-[#bea166]"
-                : "text-gray-400 border-transparent hover:text-white"
+              ? "text-[#bea166] border-[#bea166]"
+              : "text-gray-400 border-transparent hover:text-white"
               }`}
           >
             Chauffeur Booking & Quote
@@ -102,8 +102,8 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
           <button
             onClick={() => setActiveTab("track")}
             className={`text-sm font-semibold tracking-wide uppercase transition-colors pb-1 border-b-2 ${activeTab === "track"
-                ? "text-[#bea166] border-[#bea166]"
-                : "text-gray-400 border-transparent hover:text-white"
+              ? "text-[#bea166] border-[#bea166]"
+              : "text-gray-400 border-transparent hover:text-white"
               }`}
           >
             Track My Vehicle
@@ -133,8 +133,8 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
                   type="button"
                   onClick={() => setBookingType("transfer")}
                   className={`py-1.5 text-xs sm:text-sm font-medium rounded-md transition ${bookingType === "transfer"
-                      ? "bg-white text-[#152442] shadow-sm font-semibold"
-                      : "text-gray-600 hover:text-[#152442]"
+                    ? "bg-white text-[#152442] shadow-sm font-semibold"
+                    : "text-gray-600 hover:text-[#152442]"
                     }`}
                 >
                   One Way Transfer
@@ -143,8 +143,8 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
                   type="button"
                   onClick={() => setBookingType("return")}
                   className={`py-1.5 text-xs sm:text-sm font-medium rounded-md transition ${bookingType === "return"
-                      ? "bg-white text-[#152442] shadow-sm font-semibold"
-                      : "text-gray-600 hover:text-[#152442]"
+                    ? "bg-white text-[#152442] shadow-sm font-semibold"
+                    : "text-gray-600 hover:text-[#152442]"
                     }`}
                 >
                   Return Journey
@@ -153,8 +153,8 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
                   type="button"
                   onClick={() => setBookingType("hourly")}
                   className={`py-1.5 text-xs sm:text-sm font-medium rounded-md transition ${bookingType === "hourly"
-                      ? "bg-white text-[#152442] shadow-sm font-semibold"
-                      : "text-gray-600 hover:text-[#152442]"
+                    ? "bg-white text-[#152442] shadow-sm font-semibold"
+                    : "text-gray-600 hover:text-[#152442]"
                     }`}
                 >
                   By The Hour / Tour
@@ -299,8 +299,8 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
                       type="button"
                       onClick={() => setVehicle(key)}
                       className={`p-2.5 text-left border rounded-lg transition-all ${vehicle === key
-                          ? "border-[#bea166] bg-[#bea166]/10 text-[#152442] shadow-sm font-semibold"
-                          : "border-gray-200 hover:border-gray-400 bg-white"
+                        ? "border-[#bea166] bg-[#bea166]/10 text-[#152442] shadow-sm font-semibold"
+                        : "border-gray-200 hover:border-gray-400 bg-white"
                         }`}
                     >
                       <div className="text-xs font-bold text-[#152442]">{item.name}</div>
@@ -338,7 +338,7 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
               {/* Action Buttons */}
               <div className="pt-2 flex items-center justify-between">
                 <a
-                  href="tel:+61404410000"
+                  href="tel:+6140441000+"
                   className="text-xs text-gray-600 hover:text-[#152442] flex items-center"
                 >
                   <svg className="w-3.5 h-3.5 mr-1 text-[#bea166]" fill="currentColor" viewBox="0 0 20 20">
@@ -364,7 +364,7 @@ export default function QuickBookingWidget({ onClose, isModal = false }) {
               </div>
               <h3 className="text-xl font-bold text-[#152442]">Booking Request Received!</h3>
               <p className="text-sm text-gray-600 max-w-md mx-auto">
-                Your reservation reference is <strong className="text-[#bea166]">HGH-{Math.floor(100000 + Math.random() * 900000)}</strong>.
+                Your reservation reference is <strong className="text-[#bea166]">HGH-{Math.floor(14000 + 0 + Math.random() * 900000)}</strong>.
                 Our Sydney dispatch desk will monitor your flight details and confirm via SMS and email.
               </p>
               <div className="pt-4">

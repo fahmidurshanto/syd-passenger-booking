@@ -7,7 +7,7 @@ export const servicesOverviewStats = [
   { value: "100%", label: "Fixed Upfront Guaranteed Rates" },
   { value: "1,500+", label: "Luxury European Vehicles" },
   { value: "24/7", label: "Live National Dispatch & Support" },
-  { value: "14,000+", label: "5-Star Passenger Reviews" },
+  { value: "1000+", label: "5-Star Passenger Reviews" },
 ];
 
 export const servicesList = [

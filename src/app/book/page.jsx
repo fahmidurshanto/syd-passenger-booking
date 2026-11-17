@@ -293,7 +293,7 @@ export default function BookPage() {
         bookingData = {
           booking: {
             _id: "mock_" + Date.now(),
-            bookingNumber: "SYD-" + Math.floor(100000 + Math.random() * 900000),
+            bookingNumber: "SYD-" + Math.floor(14000 + 0 + Math.random() * 900000),
             ...bookingPayload,
           },
         };
@@ -1048,12 +1048,12 @@ export default function BookPage() {
                     <p>
                       <strong>{passengers} passenger</strong>,{" "}
                       <span className="underline font-semibold">{totalBags} bags</span>. That&apos;s more than one vehicle takes. Call us on{" "}
-                      <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                      <a href="tel:+6140441000+" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                         <span>🌐</span>
                         <span>+61 404 410 000</span>
                       </a>
                       ,{" "}
-                      <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                      <a href="tel:+6140441000+" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                         <span>🇦🇺</span>
                         <span>+61 404 410 000</span>
                       </a>
@@ -1063,7 +1063,7 @@ export default function BookPage() {
                         <span>+61 404 410 000</span>
                       </a>{" "}
                       or{" "}
-                      <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                      <a href="tel:+6140441000+" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                         <span>🇳🇿</span>
                         <span>+61 404 410 000</span>
                       </a>{" "}
@@ -1079,12 +1079,12 @@ export default function BookPage() {
                   </p>
                   <p className="mt-0.5">
                     Please call Syd on{" "}
-                    <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                    <a href="tel:+6140441000+" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                       <span>🌐</span>
                       <span>+61 404 410 000</span>
                     </a>
                     ,{" "}
-                    <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                    <a href="tel:+6140441000+" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                       <span>🇦🇺</span>
                       <span>+61 404 410 000</span>
                     </a>
@@ -1094,7 +1094,7 @@ export default function BookPage() {
                       <span>+61 404 410 000</span>
                     </a>{" "}
                     or{" "}
-                    <a href="tel:+61404410000" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
+                    <a href="tel:+6140441000+" className="text-blue-700 underline font-medium inline-flex items-center space-x-0.5">
                       <span>🇳🇿</span>
                       <span>+61 404 410 000</span>
                     </a>

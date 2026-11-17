@@ -2,7 +2,7 @@ export const bookingPageData = {
   header: {
     helpText: "Help 24/7",
     phone: "+61 404 410 000",
-    phoneHref: "tel:+61404410000",
+    phoneHref: "tel:+6140441000+",
     loginText: "Log in",
     loginHref: "#login",
   },
@@ -106,7 +106,7 @@ export const bookingPageData = {
   footerSupport: {
     heading: "Support, 24 hours a day",
     contacts: [
-      { flag: "🇦🇺", label: "+61 404 410 000", href: "tel:+61404410000" },
+      { flag: "🇦🇺", label: "+61 404 410 000", href: "tel:+6140441000+" },
       { flag: null, label: "contact@sydairporttransfer.com.au", href: "mailto:contact@sydairporttransfer.com.au" },
     ],
     feedbackText: "Send us feedback",

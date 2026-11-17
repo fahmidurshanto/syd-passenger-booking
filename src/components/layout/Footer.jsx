@@ -5,7 +5,7 @@ export default function Footer({ onOpenBooking }) {
   const quickLinks = [
     { name: "Airport Meeting Points", href: "#faq" },
     { name: "Book Now", href: "/book" },
-    { name: "Manage Booking", href: "/book" },
+    { name: "Manage Booking", href: "/manage-booking" },
     { name: "Contact Us", href: "/contact-us" },
     { name: "City Guides", href: "#locations" },
     { name: "Popular Routes", href: "#locations" },

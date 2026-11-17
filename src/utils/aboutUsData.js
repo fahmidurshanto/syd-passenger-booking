@@ -7,7 +7,7 @@ export const aboutOverviewStats = [
   { value: "12", label: "Offices Across 3 Countries" },
   { value: "1,500+", label: "Size of Luxury Fleet" },
   { value: "2.8M", label: "Passengers Moved Each Year" },
-  { value: "14,000+", label: "5-Star Customer Reviews" },
+  { value: "1000+", label: "5-Star Customer Reviews" },
 ];
 
 export const coreValues = [

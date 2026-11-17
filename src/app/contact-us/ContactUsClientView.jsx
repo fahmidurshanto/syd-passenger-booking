@@ -203,7 +203,7 @@ export default function ContactUsClientView() {
                   <div className="text-xs uppercase tracking-wider text-gray-300 mt-0.5 font-medium">All Australian Capitals</div>
                 </div>
                 <div className="px-2">
-                  <div className="text-xl sm:text-2xl font-extrabold text-[#bea166]">14,000+</div>
+                  <div className="text-xl sm:text-2xl font-extrabold text-[#bea166]">1000+</div>
                   <div className="text-xs uppercase tracking-wider text-gray-300 mt-0.5 font-medium">5-Star Client Reviews</div>
                 </div>
               </div>
@@ -645,11 +645,10 @@ export default function ContactUsClientView() {
                   <button
                     key={pill.id}
                     onClick={() => setSelectedRegionFilter(pill.id)}
-                    className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${
-                      selectedRegionFilter === pill.id
-                        ? "bg-[#152442] text-white shadow-md"
-                        : "bg-white text-gray-600 border border-gray-200 hover:border-[#bea166] hover:text-[#152442]"
-                    }`}
+                    className={`px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider transition-all ${selectedRegionFilter === pill.id
+                      ? "bg-[#152442] text-white shadow-md"
+                      : "bg-white text-gray-600 border border-gray-200 hover:border-[#bea166] hover:text-[#152442]"
+                      }`}
                   >
                     {pill.label}
                   </button>
@@ -817,9 +816,8 @@ export default function ContactUsClientView() {
                     >
                       <span className="text-base font-bold text-[#152442] pr-4">{faq.q}</span>
                       <div
-                        className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-transform ${
-                          isOpen ? "bg-[#bea166] text-white rotate-180" : "bg-gray-100 text-[#152442]"
-                        }`}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-transform ${isOpen ? "bg-[#bea166] text-white rotate-180" : "bg-gray-100 text-[#152442]"
+                          }`}
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />

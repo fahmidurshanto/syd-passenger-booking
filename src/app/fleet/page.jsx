@@ -103,7 +103,7 @@ export default function FleetPage() {
                 </button>
 
                 <a
-                  href="tel:+61404410000"
+                  href="tel:+6140441000+"
                   className="border-2 border-transparent text-[#bea166] hover:text-white font-semibold text-xs sm:text-sm uppercase tracking-widest px-4 py-3.5 rounded transition-all flex items-center space-x-2"
                 >
                   <svg className="w-4 h-4 mr-1 text-[#bea166]" fill="currentColor" viewBox="0 0 20 20">
@@ -181,11 +181,10 @@ export default function FleetPage() {
                 <button
                   key={cat.id}
                   onClick={() => setActiveCategory(cat.id)}
-                  className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
-                    activeCategory === cat.id
-                      ? "bg-[#152442] text-white shadow-md"
-                      : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-100"
-                  }`}
+                  className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${activeCategory === cat.id
+                    ? "bg-[#152442] text-white shadow-md"
+                    : "bg-white border border-gray-200 text-gray-700 hover:bg-gray-100"
+                    }`}
                 >
                   {cat.label}
                 </button>
@@ -446,7 +445,7 @@ export default function FleetPage() {
                 Book Now
               </button>
               <a
-                href="tel:+61404410000"
+                href="tel:+6140441000+"
                 className="border border-white/30 text-white hover:bg-white/10 text-xs sm:text-sm font-semibold uppercase tracking-wider px-6 py-3.5 rounded transition"
               >
                 Call 24/7 Team

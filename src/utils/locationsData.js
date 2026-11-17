@@ -7,7 +7,7 @@ export const nationwideStats = [
   { value: "18", label: "Major Cities Serviced Across Oceania" },
   { value: "1,500+", label: "Size of Luxury Fleet" },
   { value: "2.8M", label: "Total Passengers Moved Each Year" },
-  { value: "14,000+", label: "5-Star Passenger Reviews" },
+  { value: "1000+", label: "5-Star Passenger Reviews" },
 ];
 
 export const brandPartners = [
